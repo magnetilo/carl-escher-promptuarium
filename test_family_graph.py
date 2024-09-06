@@ -1,13 +1,13 @@
 import unittest
-from directed_graph import DirectedGraph  # Assuming DirectedGraph is in directed_graph.py
+from family_graph import FamilyGraph
 
 class TestDirectedGraph(unittest.TestCase):
     
     def setUp(self):
         """
-        Set up a new DirectedGraph object before each test.
+        Set up a new FamilyGraph object before each test.
         """
-        self.graph = DirectedGraph()
+        self.graph = FamilyGraph()
 
     def test_add_nodes(self):
         """

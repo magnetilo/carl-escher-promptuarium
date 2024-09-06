@@ -1,4 +1,3 @@
-unittest
 networkx
 matplotlib
-uuid
+notebook
