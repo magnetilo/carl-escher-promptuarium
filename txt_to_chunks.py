@@ -64,6 +64,24 @@ parser.add_argument(
 )
 
 parser.add_argument(
+    "-fns",
+    "--fn-delimiter-start",
+    dest="footnote_delimiter_start",
+    required=False,
+    default="FNS",
+    help="string to mark beginning of footnote",
+)
+
+parser.add_argument(
+    "-fne",
+    "--fn-delimiter-end",
+    dest="footnote_delimiter_end",
+    required=False,
+    default="FNE",
+    help="string to mark end of footnote",
+)
+
+parser.add_argument(
     "-rh",
     "--remove-hyphenation",
     dest="remove_hyphenation",
@@ -71,6 +89,15 @@ parser.add_argument(
     default=True,
     action="store_true",
 )
+
+parser.add_argument(
+    "--remove-html",
+    dest="remove_html",
+    required=False,
+    default=True,
+    action="store_true",
+)
+
 
 parser.add_argument("-v", "--verbose", dest="verbose", action="store_true")
 
@@ -133,7 +160,7 @@ except Exception as e:
 
 
 # traverse the given directory and add all files ending with _md.txt to a list of strings
-md_files = []
+md_files: list[str] = []
 
 for root, dirs, files in os.walk(args.input_directory):
     for file in files:
@@ -146,18 +173,74 @@ if args.verbose:
     # print(md_files)
 
 # Remove items containing the substring "1_Meta" from the list
-md_files = [file for file in md_files if "1_Meta" not in file]
+md_files: list[str] = [file for file in md_files if "1_Meta" not in file]
 
 #  Prepare files for splitting
 # ==============================================================================
 
+# write text files to list of strings
+texts: list[str] = []
+for file in md_files:
+    with open(file, "r", encoding="utf-8") as f:
+        texts.append(f.read())
+
 # Put footnotes back into their context
 
+# iterate over the list of strings and in each string replace the first occurrence
+# of [^fn##] with the text behind the second occurence of [^fn##] in brackets
+
+# regex pattern to match the footnote number
+fn_pattern: re.Pattern[str] = re.compile(r"\[\^fn\d+\]")
+
+# regex pattern to match the footnote text delimited by [^fn##]: and following label [^fn##] using a lookahead and allowing for newlines
+
+fn_text_pattern: re.Pattern[str] = re.compile(
+    r"^(\[\^fn\d+\]:\s*(.*?))(?=\[\^fn\d+\])", re.DOTALL
+)
+
+# iterate over the footnotes and check if a footnote text is found and whether it is preceded by a footnote anchor with the corresponding number earlier in the string
+for text in texts:
+    fn_matches: list[re.Match[str]] = fn_pattern.finditer(text)
+    for match in fn_matches:
+        fn_text_match: re.Match[str] = fn_text_pattern.search(text, match.end())
+        if fn_text_match:
+
+            # check if the corresponding footnote anchor is missing before trying to replace it by the footnote text
+            if not fn_text_match.group(1):
+                logging.warning(
+                    f"Footnote text {fn_text_match.group(2)} has no corresponding anchor in text {text}"
+                )
+                continue
+            else:
+                # replace the footnote anchor with the footnote text
+                text: str = text.replace(
+                    match.group(), fn_text_match.group(2), 1
+                )
+                # remove the footnote text from the text
+                text: str = re.sub(fn_text_pattern, "", text, 1)
+                texts[texts.index(text)] = text
 
 
+# #     * optionally strip html tags from markdown (dirty solution)
 
-#     * optionally strip html tags from markdown
-#     * remove hyphenation
+# if args.remove_html:
+#     html_pattern: re.Pattern[str] = re.compile(r"<.*?>")
+#     for text in texts:
+#         text = html_pattern.sub("", text)
+#         texts[texts.index(text)] = text
+
+# #     * remove hyphenation if line ends with hyphen and next line starts with lowercase letters
+# if args.remove_hyphenation:
+#     hyphenation_pattern = re.compile(r"(\w+)-\n(\w+)")
+#     for text in texts:
+#         text: str = hyphenation_pattern.sub(r"\1\2", text)
+#         texts[texts.index(text)] = text
+
+# output the first 5 entries of the texts list
+if args.verbose:
+    print(texts[:5])
+
+
 #     * Create one document per family
 #         * remove repeating headers and footers
 #         * remove repeating numbering
