@@ -12,17 +12,35 @@ class FamilyGraph:
 
     def add_person(self, person_attributes):
         """
-        Adds a single node to the graph.
-        
+        Adds a single person node to the graph and returns the UUID of the node.
+        If the person already exists, the UUID of the existing node is returned.
+
         Parameters:
-            node: The node to add to the graph.
+            person_attributes: Dict specifying person of structure:
+            {
+                "family_id": None,
+                "father_family_id": "Billeter0001",
+                "family_name": "Billeter",
+                "surname": "Susanna",
+                "birth_year": 1615,
+                "death_year": 1644
+            }
+        
+        Returns:
+            person_id: UUID of new or already existing person node
         """
         # check if person is already in self.G:
         person_id = self.get_id_from_attributes(person_attributes)
 
         if person_id is not None:
-            # TODO update node...
-            pass
+            # Merge the new person_attributes with already existing ones ...
+            for key, val in self.G.nodes[person_id].items():
+                if val is None or (
+                    len(str(val)) < len(str(person_attributes.get(key))) 
+                    and person_attributes.get(key) is not None
+                    ):
+                    self.G.nodes[person_id][key] = person_attributes.get(key)
+                    
         else:
             # Person is not in self.G yet:
             person_id = uuid.uuid4()
@@ -32,7 +50,12 @@ class FamilyGraph:
     
     def add_relation(self, id_from, id_to, relation_type):
         """
+        Creates a directed edge from id_from to id_to.
 
+        Parameters:
+            id_from: person_id of first node
+            id_to: persion_id of second note
+            relation_type: code specifying relation of first to second node (FATHER_CHILD, HUSBAND_WIFE, MOTHER_CHILD)
         """
         if relation_type not in ['FATHER_CHILD', 'HUSBAND_WIFE', 'MOTHER_CHILD']:
             raise Exception('relation_type should be one of: FATHER_CHILD, HUSBAND_WIFE, MOTHER_CHILD')
@@ -40,10 +63,22 @@ class FamilyGraph:
 
     def get_id_from_attributes(self, person_attributes):
         """
-        Adds multiple nodes to the graph.
+        Checks if a person node of given person_attributes already exists in the graph.
+        It finds already existing persons through matching the family_id of person_attributes
+        with the nodes in the graph.
+        Otherwise it also looks if father_family_id of person_attributes is already in the graph
+        and matches the name and birth_year of its children
         
         Parameters:
-            nodes: A list of nodes to add to the graph.
+            person_attributes: person attribute containing (at least):
+            {
+                "family_id": None,
+                "father_family_id": "Billeter0001",
+                "surname": "Susanna",
+                "birth_year": 1615
+            }
+
+        Returns: UUID of person node if already exists, or else None
         """
         
         # Check if person with family_id is already in self.G:
