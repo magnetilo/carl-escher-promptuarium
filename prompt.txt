@@ -1,0 +1,108 @@
+# Transcribing Instructions for Genealogical Data (Based on Carl Keller-Escher’s Promptuarium Genealogicum)
+
+1. **Headings**:
+   - Use family names as headings.
+   - Center the family name by applying the "center" alignment.
+   - After the family name, insert a horizontal line.
+
+2. **Text Formatting**:
+   - Follow the layout of the original text closely, but prioritize logical readability.
+   - Do not transcribe page numbers from the original document.
+
+3. **Abbreviations**:
+   - Leave all abbreviations as they appear in the source material.
+   - Common abbreviations:
+     - `ux.` for wife/wives (Latin: uxor/uxores).
+     - `m.` for husband (Latin: maritus).
+     - `V.D.M.` for pastor (Latin: Verbi divini minister).
+     - Currency abbreviations: `lb` for libra (pound) and `ẞ` for Schilling.
+
+4. **Paragraphs and Line Breaks**:
+   - Every new line in the original document should be a new line in the transcription.
+   - Use paragraph breaks as they appear in the original, applying line breaks where necessary.
+   - If the original text is indented or part of a list, mimic that formatting by indenting the text accordingly.
+
+5. **Numbered Lists**:
+   - Use numbered lists when family members are listed with numbers. Do not modify or add numbering.
+   - If the numbering includes a period (e.g., 1.), and you do not want it recognized as a numbered list in your tool, add a backslash (e.g., `1\.`) to prevent automatic formatting.
+
+6. **Special Formatting**:
+   - If text is indented in the original, replicate this by using indentation in the transcription.
+   - Indentations can be created by using the ">" symbol at the beginning of the line.
+   - For nested indentations, use multiple ">" symbols (e.g., `>>`, `>>>`).
+
+7. **Text Annotations**:
+   - Text that appears on the left side of the original document (annotations, additions) should be integrated into the transcription at the correct spot.
+   - Surround such annotations with a horizontal line (`---`) and place the annotation within square brackets.
+   - Example:
+     ```
+     ---
+     [Note on left side: Additional information here.]
+     ---
+     ```
+
+8. **Footnotes and Special Notes**:
+   - For footnotes or special notes in the original document, add them using a numbered footnote system.
+   - Use the following format for footnotes:
+     - In the main text: `[^fn1]`
+     - At the bottom of the page: `[^fn1]: Footnote content here.`
+   - If a genealogical tree or diagram appears in the document, note its presence with: `[Stammbaumdarstellung]`.
+
+9. **Unclear Text**:
+   - If certain words are difficult to read or unclear:
+     - Use square brackets with a question mark to indicate uncertainty: `[uncertain word?]`.
+     - If only certain letters are unclear, use dots for each missing letter: `e.g., [H...r]`.
+     - For longer unclear sections, use three dots: `[...]`.
+
+10. **Special Characters**:
+   - If special characters like asterisks (*) or plus signs (+) are used for dates, precede them with a backslash to avoid special formatting: `\*1742`, `\+1742`.
+   - For symbols like † (death), use the following keyboard shortcuts:
+     - Backslash: `Alt Gr + >/<` or `Alt + 92`
+     - Dagger (†): `Alt + 0134`
+     - Scharfes S (ß): `Alt + 0223`
+
+11. **Submitting Transcriptions**:
+   - Once a page is completed, submit it for review by clicking the appropriate button in the tool (for example, "Submit to Editor" or similar depending on your CLI tool).
+
+12. **General Tips**:
+   - Follow the layout as much as possible, but ensure the transcribed text remains logical and readable.
+   - Consistency is key, especially with formatting and handling annotations.
+
+The output should be in a custom JSON format. It should contain data for persons like so:
+
+{
+id:UUID
+name_geboren: SURNAME
+name_geheiratet: SURNAME or NONE
+vorname: GIVEN NAME
+geboren: DATE
+gestorben: DATE
+beruf: PROFESSION
+TODO:  family_id: LASTNAME OF FATHER AND INDEX NUMBER
+TODO:  father_family_id: 
+}
+
+There should also be dataabout relations like so:
+
+{
+id: UUID
+node_id_from: UUID OF FIRST ENTITY
+node_id_to: UUID OF SECOND ENTITY
+relation: FATHER_CHILD OR HUSBAND_WIFE OR MOTHER_CHILD
+}
+
+Be careful to note:
+
+- "der Pfister" is not part of a name. It means "baker".
+- People indented under another person are considered their children. They have the same surname.
+- "ux." means "uxor" and designates the following person to be married to the above person.
+- "T.v." means "Tochter von" and designates the following person to be the parent to the above person.
+- "W. v." means "Witwe von" and designates the following person to be the widow to the above person.
+- "Zftr." designates the membership in a "Zunft". The following year is the year when the person joined the Zunft.
+- Give UUIDs as identifiers to prevent name collisions.
+- The number at the beginning of a line before a man's name is to identify that person.
+- "Hs." is an abbreviation for the given name "Hans".
+- "Aa." is an abbreviation for the given name "Anna".
+- "Pfr." is an abbreciation for the profession "Pfarrer".
+- "T. v. B. 4" would be equal to "Tochter von B.. [Lastname mentioned before] N° 4"
+- "ux" followed by a number designates the wife number of the above person. It is followed by the wife's name, if known.
