@@ -101,8 +101,22 @@ Turn
 ```
 
 ## Construct Graph
+Insert json data into `networkX` graph structure.
 
+* Important: Ensure that duplicated persons are connected to one person.
 
 ## Visualization
 
+Visualization using [https://gephi.org/gephi-lite/](https://gephi.org/gephi-lite/).
+
+File: [https://github.com/magnetilo/carl-escher-promptuarium/blob/main/data/graph_data/gephied.gexf](https://github.com/magnetilo/carl-escher-promptuarium/blob/main/data/graph_data/gephied.gexf).
+
+* **Node color**: Family name
+* **Node size**: Number of direct offsprings
+* **Edge color**: Relation (FATHER_CHILD, HUSBAND_WIFE, MOTHER_CHILD)
+
+![graph1](/img/graph1.png)
+
+
+![graph](/img/graph.png)
 
