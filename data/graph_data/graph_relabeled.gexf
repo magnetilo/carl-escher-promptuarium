@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2024-09-07">
+    <creator>NetworkX 3.3</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="7" title="relation_type" type="string" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="family_id" type="string" />
+      <attribute id="1" title="father_family_id" type="string" />
+      <attribute id="2" title="family_name" type="string" />
+      <attribute id="3" title="surname" type="string" />
+      <attribute id="4" title="birth_year" type="string" />
+      <attribute id="5" title="death_year" type="string" />
+      <attribute id="6" title="node_label" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Heinrich 1613" label="23fd4a98-a063-48b3-a2c6-d5eacade5af9">
+        <attvalues>
+          <attvalue for="0" value="Billeter0001" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="Billeter" />
+          <attvalue for="3" value="Heinrich" />
+          <attvalue for="4" value="1613" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="Heinrich 1613" />
+        </attvalues>
+      </node>
+      <node id="Aa Maria None" label="0b56afab-50b9-45f6-af67-60b6bb8a555f">
+        <attvalues>
+          <attvalue for="0" value="None" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="Wirth" />
+          <attvalue for="3" value="Aa Maria" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="Aa Maria None" />
+        </attvalues>
+      </node>
+      <node id="Hs. Caspar 1613" label="98a248a1-5191-4003-87a9-da3415e9367d">
+        <attvalues>
+          <attvalue for="0" value="Billeter0002" />
+          <attvalue for="1" value="Billeter0001" />
+          <attvalue for="2" value="Billeter" />
+          <attvalue for="3" value="Hs. Caspar" />
+          <attvalue for="4" value="1613" />
+          <attvalue for="5" value="1654" />
+          <attvalue for="6" value="Hs. Caspar 1613" />
+        </attvalues>
+      </node>
+      <node id="Susanna 1615" label="87797615-94e3-4b11-ab1d-5ea4c1552806">
+        <attvalues>
+          <attvalue for="0" value="None" />
+          <attvalue for="1" value="Billeter0001" />
+          <attvalue for="2" value="Billeter" />
+          <attvalue for="3" value="Susanna" />
+          <attvalue for="4" value="1615" />
+          <attvalue for="5" value="1644" />
+          <attvalue for="6" value="Susanna 1615" />
+        </attvalues>
+      </node>
+      <node id="Christoph None" label="73af3037-6091-4b06-a1a7-0def4fc74b9f">
+        <attvalues>
+          <attvalue for="0" value="Geiger0006" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="Geiger" />
+          <attvalue for="3" value="Christoph" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="Christoph None" />
+        </attvalues>
+      </node>
+      <node id="Adrian 1617" label="67eba151-a4bb-497c-b70c-6553db7466d3">
+        <attvalues>
+          <attvalue for="0" value="Billeter0003" />
+          <attvalue for="1" value="Billeter0001" />
+          <attvalue for="2" value="Billeter" />
+          <attvalue for="3" value="Adrian" />
+          <attvalue for="4" value="1617" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="Adrian 1617" />
+        </attvalues>
+      </node>
+      <node id="Dorothea None" label="a79cf677-6adc-4829-a972-283fd4af63f6">
+        <attvalues>
+          <attvalue for="0" value="None" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="Irminger" />
+          <attvalue for="3" value="Dorothea" />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="Dorothea None" />
+        </attvalues>
+      </node>
+      <node id="T. Joh. None" label="828a582c-7551-43da-9473-02681371efe5">
+        <attvalues>
+          <attvalue for="0" value="Jakob0003" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="Jakob" />
+          <attvalue for="3" value="T. Joh." />
+          <attvalue for="4" value="None" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="T. Joh. None" />
+        </attvalues>
+      </node>
+      <node id="Hs. Jakob 1635" label="473f1ce3-a3cc-4968-a2d1-19ed3f081048">
+        <attvalues>
+          <attvalue for="0" value="Billeter0004" />
+          <attvalue for="1" value="Billeter0003" />
+          <attvalue for="2" value="Billeter" />
+          <attvalue for="3" value="Hs. Jakob" />
+          <attvalue for="4" value="1635" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="Hs. Jakob 1635" />
+        </attvalues>
+      </node>
+      <node id="Elisabetha 1636" label="019b5320-ed5d-40ca-a06c-d55e14fdd867">
+        <attvalues>
+          <attvalue for="0" value="None" />
+          <attvalue for="1" value="Billeter0003" />
+          <attvalue for="2" value="Billeter" />
+          <attvalue for="3" value="Elisabetha" />
+          <attvalue for="4" value="1636" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="Elisabetha 1636" />
+        </attvalues>
+      </node>
+      <node id="Emerentiana 1638" label="8da5a576-f7c9-499c-95a1-2f4506182ff5">
+        <attvalues>
+          <attvalue for="0" value="None" />
+          <attvalue for="1" value="Billeter0003" />
+          <attvalue for="2" value="Billeter" />
+          <attvalue for="3" value="Emerentiana" />
+          <attvalue for="4" value="1638" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="Emerentiana 1638" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Heinrich 1613" target="Aa Maria None" id="0">
+        <attvalues>
+          <attvalue for="7" value="HUSBAND_WIFE" />
+        </attvalues>
+      </edge>
+      <edge source="Heinrich 1613" target="Hs. Caspar 1613" id="1">
+        <attvalues>
+          <attvalue for="7" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Heinrich 1613" target="Susanna 1615" id="2">
+        <attvalues>
+          <attvalue for="7" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Heinrich 1613" target="Adrian 1617" id="3">
+        <attvalues>
+          <attvalue for="7" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Aa Maria None" target="Hs. Caspar 1613" id="4">
+        <attvalues>
+          <attvalue for="7" value="MOTHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Aa Maria None" target="Susanna 1615" id="5">
+        <attvalues>
+          <attvalue for="7" value="MOTHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Aa Maria None" target="Adrian 1617" id="6">
+        <attvalues>
+          <attvalue for="7" value="MOTHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Hs. Caspar 1613" target="Dorothea None" id="24">
+        <attvalues>
+          <attvalue for="7" value="HUSBAND_WIFE" />
+        </attvalues>
+      </edge>
+      <edge source="Hs. Caspar 1613" target="Hs. Jakob 1635" id="9">
+        <attvalues>
+          <attvalue for="7" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Hs. Caspar 1613" target="Elisabetha 1636" id="25">
+        <attvalues>
+          <attvalue for="7" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Hs. Caspar 1613" target="Emerentiana 1638" id="26">
+        <attvalues>
+          <attvalue for="7" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Christoph None" target="Susanna 1615" id="27">
+        <attvalues>
+          <attvalue for="7" value="HUSBAND_WIFE" />
+        </attvalues>
+      </edge>
+      <edge source="Dorothea None" target="Hs. Jakob 1635" id="50">
+        <attvalues>
+          <attvalue for="7" value="MOTHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Dorothea None" target="Elisabetha 1636" id="51">
+        <attvalues>
+          <attvalue for="7" value="MOTHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="Dorothea None" target="Emerentiana 1638" id="52">
+        <attvalues>
+          <attvalue for="7" value="MOTHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="T. Joh. None" target="Dorothea None" id="34">
+        <attvalues>
+          <attvalue for="7" value="HUSBAND_WIFE" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
