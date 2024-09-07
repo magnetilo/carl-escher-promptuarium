@@ -14,33 +14,43 @@ Aim: This CLI app creates chunks of text to feed into chunk_to_graph.py
 Dependencies:
 * Python 3.11
 * argparse
+* ... (see imports)
 
 Mains steps:
 
-* Travers a directory containing data regarding Zurich families in a number of formats
+* Traverse a directory containing data regarding Zurich families in a number of formats
     * source https://www.e-manuscripta.ch/zuzcmi/content/titleinfo/3530958
     * transcription https://opendata.swiss/de/dataset/promptuarium-genealogicum-des-carl-keller-escher
     * transcription rules https://www.zb.uzh.ch/storage/app/media/ueber-uns/Citizen-Science/Familiengeschichte/Stylesheet_Transkriptionen_Familiengeschichte.pdf
 * Choose relevant text files
 * Prepare files for splitting
-    * Put footnotes back into their context
-    * optionally strip html tags from markdown
-    * remove hyphenation
+    * Put footnotes back into their context, delimited by markers
+    * strip html tags from markdown
     * Create one document per family
-        * remove repeating headers and footers
-        * remove repeating numbering
 * Split familiy documents into separate person chunks
     * write each person chunk to a new file
-    * keep the file name of the original text files for reference
-        * distinguish between different family stems (e.g. Schaad A, Schaad B)
+
+    
+desideratum:
+* ! Proper testing!
+* ! documentation!
+* ! distinguish between different family stems (e.g. Schaad A, Schaad B, Meyer ...)
+* ! recognize beginning of new person description if preceding "__BLANK__" is not present
+* ! keep the file name of the original text files for reference
+* ! smarter handling of person numbering collisions
+* discard of introdutory text at the beginning of the family descriptions
+* smarter naming of the output files
+* remove repeating headers and footers and comments like "finis"
+* improved stripping of html tags from markdown
+* handling of repeating numbering when a person is mentioned at the end of a page and at the beginning of the next page
+* handling of footnote-anchors without corresponding footnote-text and vice versa
+* more transparancy about shortcuts and discarded information
 
 """
 
 import os
 import re
 import argparse
-import pathlib
-from datetime import date
 import sys
 import logging
 from colorama import just_fix_windows_console, Fore
@@ -182,7 +192,7 @@ md_files: list[str] = [file for file in md_files if "Abgestorbne" not in file]
 # ==============================================================================
 
 family_pattern: re.Pattern[str] = re.compile(
-    r"\/data\/(von\s+)?[a-zA-ZäöüÄÖÜ]+((\s+(v(om|\.|on)\s+)[a-zA-ZäöüÄÖÜ]+))?"
+    r"[\/\\]data[\/\\](von\s+)?[a-zA-ZäöüÄÖÜ]+((\s+(v(om|\.|on)\s+)[a-zA-ZäöüÄÖÜ]+))?"
 )
 
 # write text files to list of strings
@@ -190,13 +200,16 @@ texts: list[list[str]] = []
 for file in md_files:
     with open(file, "r", encoding="utf-8") as f:
         texts.append(
-            [f.read(), file, family_pattern.search(file).group().replace("/data/", "")]
+            [
+                f.read(),
+                file,
+                family_pattern.search(file)
+                .group()
+                .replace(os.sep + "data" + os.sep, ""),
+            ]
         )
 
-# Put footnotes back into their context
-
-# iterate over the list of strings and in each string replace the first occurrence
-# of [^fn##] with the text behind the second occurence of [^fn##] in brackets
+# Put footnotes back into their context:
 
 # regex pattern to match the footnote number
 fn_pattern: re.Pattern[str] = re.compile(r"\[\^fn\d+\]")
@@ -204,7 +217,8 @@ fn_pattern: re.Pattern[str] = re.compile(r"\[\^fn\d+\]")
 # regex pattern to match the footnote text delimited by [^fn##]: and following label [^fn##] using a lookahead and allowing for newlines
 
 fn_text_pattern: re.Pattern[str] = re.compile(
-    r"^(\[\^fn\d+\]:\s*(.*?))(?=(\n\s?\[\^fn\d+\]|$(?![\r\n])))", re.DOTALL | re.MULTILINE
+    r"^(\[\^fn\d+\]:\s*(.*?))(?=(\n\s?\[\^fn\d+\]|$(?![\r\n])))",
+    re.DOTALL | re.MULTILINE,
 )
 
 # iterate over the footnotes and check if a footnote text is found and whether it is preceded by a footnote anchor with the corresponding number earlier in the string
@@ -212,6 +226,11 @@ sublist: list[str]
 text: str
 for sublist in texts:
     for text in sublist:
+
+        # optionally remove hyphenation
+        if args.remove_hyphenation:
+            text = re.sub(r"(\w+)-\n(\w+)", r"\1\2", text)
+
         fn_matches: list[re.Match[str]] = fn_pattern.finditer(text)
         for match in fn_matches:
             fn_text_match: re.Match[str] = fn_text_pattern.search(text, match.end())
@@ -244,6 +263,7 @@ if args.verbose:
 
 # append all the texts regarding the same family to one string joined by two newlines
 # and write the string to a new set in the form: familyname: text
+# Warning: here we loose the file name of the original text files for reference!
 
 # create a dictionary to store the texts by family
 family_texts: dict[str, str] = {}
@@ -317,55 +337,3 @@ with alive_bar(len(family_texts)) as bar:
             ) as f:
                 f.write(person)
         bar()
-
-
-# read family names from filepath in texts list
-# WARNING: this is a dirty hardcoded solution only accepting forward path separators
-# regex \/data\/(von\s+)?[a-zA-ZäöüÄÖÜ]+((\s+(v(om|\.|on)\s+)[a-zA-ZäöüÄÖÜ]+))?
-
-# # create a list of family names
-# families: list[str] = []
-# for sublist in texts:
-#     for text in sublist:
-#         family_match: re.Match[str] = family_pattern.search(text)
-#         if family_match:
-#             families.append(family_match.group())
-
-# # remove prefixed "/data/" from family names
-# families: list[str] = [family.replace("/data/", "") for family in families]
-
-# # remove duplicates from the list of families
-# families = list(set(families))
-
-# if args.verbose:
-#     print(families)
-
-#         * remove repeating headers and footers
-# * Split familiy documents into separate person chunks
-#     * write each person chunk to a new file
-#     * keep the file name of the original text files for reference
-
-
-# #     * optionally strip html tags from markdown (dirty solution)
-
-
-# nice to have
-
-
-# if args.remove_html:
-#     html_pattern: re.Pattern[str] = re.compile(r"<.*?>")
-#     for text in texts:
-#         text = html_pattern.sub("", text)
-#         texts[texts.index(text)] = text
-
-# #     * remove hyphenation if line ends with hyphen and next line starts with lowercase letters
-# if args.remove_hyphenation:
-#     hyphenation_pattern = re.compile(r"(\w+)-\n(\w+)")
-#     for text in texts:
-#         text: str = hyphenation_pattern.sub(r"\1\2", text)
-#         texts[texts.index(text)] = text
-
-#         * remove repeating numbering when a person is mentioned at the end of a page and at the beginning of the next page
-
-
-#     * distinguish between different family stems (e.g. Schaad A, Schaad B)
