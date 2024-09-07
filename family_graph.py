@@ -6,9 +6,11 @@ import uuid
 class FamilyGraph:
     def __init__(self):
         """
-        Initializes an empty directed graph.
+        Initializes an empty directed graph self.G and 
+        an empty dict self.family_id_index used to relate each family_id to node ids.
         """
         self.G = nx.DiGraph()
+        self.family_id_index = {}
 
     def add_person(self, person_attributes):
         """
@@ -21,14 +23,28 @@ class FamilyGraph:
                 "family_id": None,
                 "father_family_id": "Billeter0001",
                 "family_name": "Billeter",
-                "surname": "Susanna",
+                "given_name": "Susanna",
                 "birth_year": 1615,
-                "death_year": 1644
+                "death_year": 1644,
+                "profession": None,
+                "origin": None
             }
         
         Returns:
             person_id: UUID of new or already existing person node
         """
+
+        # check for mandatory fields in person_attributes:
+        if any(x not in person_attributes.keys() for x in [
+            "family_id", "father_family_id", "family_name", "given_name"
+        ]):
+            raise Exception("person_attributes attributes missing. Required: family_id, father_family_id, family_name, given_name")
+        
+        # initialize other fields in person_attributes with None if not existing:
+        for key in ["birth_year", "death_year", "profession", "origin"]:
+            if key not in person_attributes.keys():
+                person_attributes[key] = None
+
         # check if person is already in self.G:
         person_id = self.get_id_from_attributes(person_attributes)
 
@@ -40,11 +56,13 @@ class FamilyGraph:
                     and person_attributes.get(key) is not None
                     ):
                     self.G.nodes[person_id][key] = person_attributes.get(key)
-                    
         else:
             # Person is not in self.G yet:
             person_id = uuid.uuid4()
             self.G.add_node(person_id, **person_attributes)
+            # Add person_id to self.family_id_index
+            if person_attributes.get("family_id") is not None:
+                self.family_id_index["family_id"] = person_id
         
         return person_id
     
@@ -82,47 +100,43 @@ class FamilyGraph:
         """
         
         # Check if person with family_id is already in self.G:
-        person_ids = [
-            id for id, data in self.G.nodes(data=True)
-            if data['family_id'] == person_attributes['family_id'] and person_attributes['family_id'] is not None
-        ]
+        person_id = self.family_id_index.get(person_attributes['family_id'])
+        # person_ids = [
+        #     id for id, data in self.G.nodes(data=True)
+        #     if data['family_id'] == person_attributes['family_id'] and person_attributes['family_id'] is not None
+        # ]
+
+        if person_id is not None:
+            return person_id
         
-        if len(person_ids) > 1:
-            raise Exception("Person exists multiple times.")
-        elif len(person_ids) == 1:
-            # Person is already in self.G:
-            return person_ids[0]
+        # if len(person_ids) > 1:
+        #     raise Exception("Person exists multiple times.")
+        # elif len(person_ids) == 1:
+        #     # Person is already in self.G:
+        #     return person_ids[0]
 
         # Check if father with family_id is already in self.G:
         if person_attributes['father_family_id'] is not None:
-            father_ids = [
-                id for id, data in self.G.nodes(data=True)
-                if data['family_id'] == person_attributes['father_family_id']
-            ]
+            father_id = self.family_id_index.get(person_attributes['father_family_id'])
 
-            if len(father_ids) > 1:
-                raise Exception("Father exists multiple times.")
-            elif len(father_ids) == 1:
+            if father_id is not None:
                 # Father is already in self.G
                 # get all children:
                 children_ids = list(self.G.successors(father_ids[0]))
+
                 # Filter children with same names only:
                 children_ids = [
                     id for id in children_ids 
                     if self.G.nodes[id]['surname'] == person_attributes['surname']
                 ]
-                if len(children_ids) == 1:
-                    # Person is already in self.G:
-                    return children_ids[0]
-                elif len(children_ids) > 0:
-                    # If multiple children with same name, filter for same birth_year:
+                if len(children_ids) > 1:
+                    # If multiple children with same name, filter for same birth_year only:
                     children_ids = [
                         id for id in children_ids 
-                        if self.G[children_ids]['birth_year'] == person_attributes['birth_year']
+                        if self.G.nodes[id]['birth_year'] == person_attributes['birth_year']
                     ]
-                    if len(children_ids) == 1:
-                        # Person is already in self.G:
-                        return children_ids[0]
+                print(f"{person_attributes['surname']} is already in self.G!")
+                return children_ids[0]
 
         # Person doesn't exist yet in self.G:
         return None
