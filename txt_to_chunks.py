@@ -69,7 +69,7 @@ parser.add_argument(
     "--fn-delimiter-start",
     dest="footnote_delimiter_start",
     required=False,
-    default="FNS",
+    default=" FNS",
     help="string to mark beginning of footnote",
 )
 
@@ -204,7 +204,7 @@ fn_pattern: re.Pattern[str] = re.compile(r"\[\^fn\d+\]")
 # regex pattern to match the footnote text delimited by [^fn##]: and following label [^fn##] using a lookahead and allowing for newlines
 
 fn_text_pattern: re.Pattern[str] = re.compile(
-    r"^(\[\^fn\d+\]:\s*(.*?))(?=\[\^fn\d+\])", re.DOTALL
+    r"^(\[\^fn\d+\]:\s*(.*?))(?=(\n\s?\[\^fn\d+\]|$(?![\r\n])))", re.DOTALL | re.MULTILINE
 )
 
 # iterate over the footnotes and check if a footnote text is found and whether it is preceded by a footnote anchor with the corresponding number earlier in the string
@@ -225,7 +225,13 @@ for sublist in texts:
                     continue
                 else:
                     # replace the footnote anchor with the footnote text
-                    text = text.replace(match.group(), fn_text_match.group(1), 1)
+                    text = text.replace(
+                        str(match.group()),
+                        args.footnote_delimiter_start
+                        + str(fn_text_match.group(2)).strip()
+                        + args.footnote_delimiter_end,
+                        1,
+                    )
                     # remove the footnote text from the text
                     text = re.sub(fn_text_pattern, "", text, 1)
                     texts[texts.index(sublist)][0] = text
@@ -281,10 +287,26 @@ with alive_bar(len(family_texts)) as bar:
             # remove empty lines at the beginning and ending of the person chunks
             person = person.strip()
             filename_suffix: str = re.sub(
-                r"\\.*", "", re.sub(r"/.*", "", person[:3].replace(" ", "_"))
+                r"\\.*",
+                "",
+                re.sub(
+                    r"\s+.*",
+                    "",
+                    re.sub(
+                        r"\.*", "", re.sub(r"/.*", "", person[:3].replace(" ", "_"))
+                    ),
+                ),
             )
             if person == "":
                 continue
+            # handle collisions: check if the file already exists and append an underline to the filename
+            while os.path.exists(
+                os.path.join(
+                    args.output_directory,
+                    f"{family}_{filename_suffix}.txt",
+                )
+            ):
+                filename_suffix += "_"
             with open(
                 os.path.join(
                     args.output_directory,
