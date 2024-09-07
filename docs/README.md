@@ -4,7 +4,7 @@ Challenge
 
 This repository provides a solution for converting transcribed genealogical handwritten volumes into a graph representation. The process involves using Python to create chunks from the markdown files, extracting structured information from the chunks using ChatGPT, converting the extracted information into JSON format, and finally constructing and visualizing the graph using Gephi.
 
-![test-img](docs/img/example_handwritten_voegeli.png)
+![example_handwritten_voegeli](docs/img/example_handwritten_voegeli.png)
 
 Content:
 - [Preprocessing: Building Chunks](#preprocessing:-building-chunks)
