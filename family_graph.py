@@ -36,13 +36,16 @@ class FamilyGraph:
         """
 
         # check for mandatory fields in person_attributes:
-        if any(x not in person_attributes.keys() for x in [
-            "family_id", "father_family_id", "family_name", "given_name"
-        ]):
-            raise Exception("person_attributes attributes missing. Required: family_id, father_family_id, family_name, given_name")
+        missing_keys = [
+            key for key in 
+            ["family_id", "family_name", "given_name"] 
+            if key not in person_attributes.keys()
+        ]
+        if len(missing_keys) > 0:
+            raise Exception(f"person_attributes attributes missing. Missing: {', '.join(missing_keys)}")
         
         # initialize other fields in person_attributes with None if not existing:
-        for key in ["husband_family_id", "birth_year", "death_year", "profession", "origin"]:
+        for key in ["father_family_id", "husband_family_id", "birth_year", "death_year", "profession", "origin"]:
             if key not in person_attributes.keys():
                 person_attributes[key] = None
 
