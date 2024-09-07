@@ -21,17 +21,27 @@ except FileNotFoundError:
     current directory.")
     sys.exit(1)
 
-# Load the Prompt that is in a separate file for ease of use.
-def promptread():
+## Load the Prompt that is in a separate file for ease of use.
+#def promptread():
+#    try:
+#        with open('prompt.txt', encoding="utf8") as file:
+#            promptstring = file.read().strip()
+#    except FileNotFoundError:
+#        print("Error: 'prompt.txt' not found. Please ensure it's in the current directory.")
+#        sys.exit(1)
+#    return promptstring
+#
+# TODO prompt = promptread()
+
+# Function to read the chunk from a specified file
+def promptread(prompt_file):
     try:
-        with open('prompt.txt', encoding="utf8") as file:
+        with open(prompt_file, encoding="utf8") as file:
             promptstring = file.read().strip()
     except FileNotFoundError:
-        print("Error: 'prompt.txt' not found. Please ensure it's in the current directory.")
+        print(f"Error: '{prompt_file}' not found. Please ensure it's in the correct directory.")
         sys.exit(1)
     return promptstring
-
-prompt = promptread()
 
 # Function to read the chunk from a specified file
 def chunkread(input_file):
@@ -81,11 +91,16 @@ if __name__ == "__main__":
     # Input and output file arguments
     parser.add_argument('--input', '-i', required=True, help='Input file containing the chunk.')
     parser.add_argument('--output', '-o', required=True, help='Output file to save the triples.')
+    parser.add_argument('--prompt', '-p', required=True, help='File containing prompt.')
 
     # Parse the arguments
     args = parser.parse_args()
 
-    # Read the input chunk
+    # Read the prompt file.
+
+    prompt = promptread(args.prompt)
+
+    # Read the input chunk.
     chunk = chunkread(args.input)
 
     # Read the input chunk
