@@ -1,4 +1,3 @@
-```json
 {
     "persons": [
         {
@@ -6,7 +5,7 @@
             "family_id": "Billeter0001",
             "father_family_id": null,
             "family_name": "Billeter",
-            "surname": "Heinrich",
+            "given_name": "Heinrich",
             "birth_year": 1613,
             "death_year": null,
             "profession": "Pfister",
@@ -17,7 +16,7 @@
             "family_id": null,
             "father_family_id": null,
             "family_name": "Wirth",
-            "surname": "Aa Maria",
+            "given_name": "Aa Maria",
             "birth_year": null,
             "death_year": null,
             "profession": null
@@ -27,7 +26,7 @@
             "family_id": "Billeter0002",
             "father_family_id": "Billeter0001",
             "family_name": "Billeter",
-            "surname": "Hs. Caspar",
+            "given_name": "Hs. Caspar",
             "birth_year": 1613,
             "death_year": null,
             "profession": null
@@ -37,7 +36,7 @@
             "family_id": "Billeter0003",
             "father_family_id": "Billeter0001",
             "family_name": "Billeter",
-            "surname": "Susanna",
+            "given_name": "Susanna",
             "birth_year": 1615,
             "death_year": 1644,
             "profession": null
@@ -47,7 +46,7 @@
             "family_id": "Geiger0006",
             "father_family_id": null,
             "family_name": "Geiger",
-            "surname": "Christoph",
+            "given_name": "Christoph",
             "birth_year": null,
             "death_year": 1665,
             "profession": "Pfr. zu Schwerzenbach"
@@ -57,7 +56,7 @@
             "family_id": "Billeter0003",
             "father_family_id": "Billeter0001",
             "family_name": "Billeter",
-            "surname": "Adrian",
+            "given_name": "Adrian",
             "birth_year": 1617,
             "death_year": null,
             "profession": null
@@ -67,7 +66,7 @@
             "family_id": "Billeter0004",
             "father_family_id": "Billeter0002",
             "family_name": "Billeter",
-            "surname": "Hs. Caspar",
+            "given_name": "Hs. Caspar",
             "birth_year": 1641,
             "death_year": null,
             "profession": null
@@ -77,7 +76,7 @@
             "family_id": null,
             "father_family_id": null,
             "family_name": "Irminger",
-            "surname": "Dorothea",
+            "given_name": "Dorothea",
             "birth_year": null,
             "death_year": null,
             "profession": null
@@ -87,7 +86,7 @@
             "family_id": "Billeter0005",
             "father_family_id": "Billeter0004",
             "family_name": "Billeter",
-            "surname": "Hs. Jakob",
+            "given_name": "Hs. Jakob",
             "birth_year": 1635,
             "death_year": null,
             "profession": null
@@ -97,7 +96,7 @@
             "family_id": "Billeter0006",
             "father_family_id": "Billeter0004",
             "family_name": "Billeter",
-            "surname": "Heinrich",
+            "given_name": "Heinrich",
             "birth_year": 1639,
             "death_year": 1720,
             "profession": "Buchbinder"
@@ -107,7 +106,7 @@
             "family_id": "Billeter0007",
             "father_family_id": "Billeter0004",
             "family_name": "Billeter",
-            "surname": "Dorothea",
+            "given_name": "Dorothea",
             "birth_year": 1645,
             "death_year": 1721,
             "profession": null
@@ -117,7 +116,7 @@
             "family_id": "Billeter0008",
             "father_family_id": "Billeter0005",
             "family_name": "Billeter",
-            "surname": "Hs. Caspar",
+            "given_name": "Hs. Caspar",
             "birth_year": 1676,
             "death_year": 1754,
             "profession": null
@@ -127,7 +126,7 @@
             "family_id": null,
             "father_family_id": null,
             "family_name": "Bodmer",
-            "surname": "Dorothea",
+            "given_name": "Dorothea",
             "birth_year": null,
             "death_year": 1734,
             "profession": null
@@ -137,7 +136,7 @@
             "family_id": "Billeter0009",
             "father_family_id": "Billeter0006",
             "family_name": "Billeter",
-            "surname": "Daniel",
+            "given_name": "Daniel",
             "birth_year": 1679,
             "death_year": 1724,
             "profession": null
@@ -147,7 +146,7 @@
             "family_id": null,
             "father_family_id": null,
             "family_name": "Stutz",
-            "surname": "Dorothea",
+            "given_name": "Dorothea",
             "birth_year": null,
             "death_year": null,
             "profession": null
@@ -157,7 +156,7 @@
             "family_id": "Billeter0010",
             "father_family_id": "Billeter0007",
             "family_name": "Billeter",
-            "surname": "Hs. Caspar",
+            "given_name": "Hs. Caspar",
             "birth_year": 1678,
             "death_year": 1747,
             "profession": null
@@ -167,7 +166,7 @@
             "family_id": null,
             "father_family_id": null,
             "family_name": "Hofmeister",
-            "surname": "Regula",
+            "given_name": "Regula",
             "birth_year": null,
             "death_year": 1764,
             "profession": null
@@ -177,7 +176,7 @@
             "family_id": "Billeter0011",
             "father_family_id": "Billeter0008",
             "family_name": "Billeter",
-            "surname": "Joh. Christoph",
+            "given_name": "Joh. Christoph",
             "birth_year": 1705,
             "death_year": 1773,
             "profession": null
@@ -187,7 +186,7 @@
             "family_id": null,
             "father_family_id": null,
             "family_name": "Hirzel",
-            "surname": "Regula",
+            "given_name": "Regula",
             "birth_year": null,
             "death_year": null,
             "profession": null
@@ -306,4 +305,3 @@
         }
     ]
 }
-```
