@@ -1,0 +1,336 @@
+{
+    "persons": [
+        {
+            "person_number": 1,
+            "family_id": "Billeter0005",
+            "father_family_id": null,
+            "family_name": "Billeter",
+            "given_name": "Caspar",
+            "birth_year": 1641,
+            "death_year": null,
+            "profession": "Schloßer",
+            "origin": null
+        },
+        {
+            "person_number": 2,
+            "family_id": null,
+            "father_family_id": null,
+            "husband_family_id": "Billeter0005",
+            "family_name": "Ulrich",
+            "given_name": "Anna",
+            "birth_year": null,
+            "death_year": null
+        },
+        {
+            "person_number": 3,
+            "family_id": "Billeter0006",
+            "father_family_id": "Billeter0005",
+            "family_name": "Billeter",
+            "given_name": "Heinrich",
+            "birth_year": 1639,
+            "death_year": 1700,
+            "profession": "Pfister",
+            "origin": null
+        },
+        {
+            "person_number": 4,
+            "family_id": null,
+            "father_family_id": null,
+            "husband_family_id": "Billeter0006",
+            "family_name": "Räuchli",
+            "given_name": "Elisabetha",
+            "birth_year": null,
+            "death_year": null
+        },
+        {
+            "person_number": 5,
+            "family_id": null,
+            "father_family_id": null,
+            "husband_family_id": "Billeter0006",
+            "family_name": "Vogel",
+            "given_name": "Anna",
+            "birth_year": null,
+            "death_year": 1719
+        },
+        {
+            "person_number": 6,
+            "family_id": "Billeter0007",
+            "father_family_id": "Billeter0006",
+            "family_name": "Billeter",
+            "given_name": "Elisabetha",
+            "birth_year": 1670,
+            "death_year": 1724,
+            "profession": "Pfister",
+            "origin": null
+        },
+        {
+            "person_number": 7,
+            "family_id": "Billeter0008",
+            "father_family_id": "Billeter0006",
+            "family_name": "Billeter",
+            "given_name": "Anna",
+            "birth_year": 1672,
+            "death_year": null
+        },
+        {
+            "person_number": 8,
+            "family_id": "Billeter0009",
+            "father_family_id": "Billeter0006",
+            "family_name": "Billeter",
+            "given_name": "A. Magdalena",
+            "birth_year": 1673,
+            "death_year": null
+        },
+        {
+            "person_number": 9,
+            "family_id": "Billeter0010",
+            "father_family_id": "Billeter0006",
+            "family_name": "Billeter",
+            "given_name": "Rudolf",
+            "birth_year": 1674,
+            "death_year": null
+        },
+        {
+            "person_number": 10,
+            "family_id": "Billeter0011",
+            "father_family_id": "Billeter0006",
+            "family_name": "Billeter",
+            "given_name": "Rudolf",
+            "birth_year": 1675,
+            "death_year": null
+        },
+        {
+            "person_number": 11,
+            "family_id": "Billeter0012",
+            "father_family_id": "Billeter0006",
+            "family_name": "Billeter",
+            "given_name": "Rudolf",
+            "birth_year": 1677,
+            "death_year": 1717
+        },
+        {
+            "person_number": 12,
+            "family_id": "Billeter0013",
+            "father_family_id": "Billeter0006",
+            "family_name": "Billeter",
+            "given_name": "Daniel",
+            "birth_year": 1679,
+            "death_year": null
+        },
+        {
+            "person_number": 13,
+            "family_id": "Billeter0014",
+            "father_family_id": "Billeter0006",
+            "family_name": "Billeter",
+            "given_name": "Wilhelm",
+            "birth_year": 1681,
+            "death_year": 1713
+        },
+        {
+            "person_number": 14,
+            "family_id": "Billeter0015",
+            "father_family_id": null,
+            "family_name": "Billeter",
+            "given_name": "Rudolf",
+            "birth_year": 1641,
+            "death_year": null,
+            "profession": "Posamenter",
+            "origin": null
+        },
+        {
+            "person_number": 15,
+            "family_id": null,
+            "father_family_id": null,
+            "husband_family_id": "Billeter0014",
+            "family_name": "Stocker",
+            "given_name": "Elisabetha",
+            "birth_year": null,
+            "death_year": null
+        },
+        {
+            "person_number": 16,
+            "family_id": "Billeter0016",
+            "father_family_id": "Billeter0014",
+            "family_name": "Billeter",
+            "given_name": "Rudolf",
+            "birth_year": 1672,
+            "death_year": null
+        },
+        {
+            "person_number": 17,
+            "family_id": "Billeter0017",
+            "father_family_id": "Billeter0014",
+            "family_name": "Billeter",
+            "given_name": "Ulrich",
+            "birth_year": 1674,
+            "death_year": 1676
+        },
+        {
+            "person_number": 18,
+            "family_id": "Billeter0018",
+            "father_family_id": "Billeter0014",
+            "family_name": "Billeter",
+            "given_name": "Barbara",
+            "birth_year": 1676,
+            "death_year": null
+        },
+        {
+            "person_number": 19,
+            "family_id": "Billeter0019",
+            "father_family_id": "Billeter0014",
+            "family_name": "Billeter",
+            "given_name": "Caspar",
+            "birth_year": 1678,
+            "death_year": 1747
+        },
+        {
+            "person_number": 20,
+            "family_id": null,
+            "father_family_id": null,
+            "husband_family_id": "Billeter0019",
+            "family_name": "Hofmeister",
+            "given_name": "Regula",
+            "birth_year": null,
+            "death_year": null
+        },
+        {
+            "person_number": 21,
+            "family_id": "Billeter0020",
+            "father_family_id": "Billeter0019",
+            "family_name": "Billeter",
+            "given_name": "Maria",
+            "birth_year": 1714,
+            "death_year": null
+        },
+        {
+            "person_number": 22,
+            "family_id": "Billeter0021",
+            "father_family_id": "Billeter0019",
+            "family_name": "Billeter",
+            "given_name": "Dorothea",
+            "birth_year": 1720,
+            "death_year": null
+        },
+        {
+            "person_number": 23,
+            "family_id": "Billeter0022",
+            "father_family_id": null,
+            "family_name": "Billeter",
+            "given_name": "Joh. Christoph",
+            "birth_year": 1705,
+            "death_year": 1773
+        },
+        {
+            "person_number": 24,
+            "family_id": null,
+            "father_family_id": null,
+            "husband_family_id": "Billeter0022",
+            "family_name": "Hirzel",
+            "given_name": "Regula",
+            "birth_year": null,
+            "death_year": null
+        }
+    ],
+    "relations": [
+        {
+            "person_number_1": 1,
+            "person_number_2": 2,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 1,
+            "person_number_2": 3,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 1,
+            "person_number_2": 4,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 3,
+            "person_number_2": 5,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 3,
+            "person_number_2": 6,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 3,
+            "person_number_2": 7,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 3,
+            "person_number_2": 8,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 3,
+            "person_number_2": 9,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 3,
+            "person_number_2": 10,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 3,
+            "person_number_2": 11,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 3,
+            "person_number_2": 12,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 14,
+            "person_number_2": 15,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 14,
+            "person_number_2": 16,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 14,
+            "person_number_2": 17,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 14,
+            "person_number_2": 18,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 14,
+            "person_number_2": 19,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 19,
+            "person_number_2": 20,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 19,
+            "person_number_2": 21,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 19,
+            "person_number_2": 22,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 23,
+            "person_number_2": 24,
+            "relation_type": "HUSBAND_WIFE"
+        }
+    ]
+}

@@ -1,0 +1,350 @@
+{
+    "persons": [
+        {
+            "person_number": 1,
+            "family_id": "Geiger0005",
+            "father_family_id": null,
+            "family_name": "Geiger",
+            "given_name": "Rudolf",
+            "birth_year": 1603,
+            "death_year": 1662,
+            "profession": "Dr. Med. Prof. physic. & Chorherr"
+        },
+        {
+            "person_number": 2,
+            "family_id": null,
+            "father_family_id": null,
+            "husband_family_id": "Geiger0005",
+            "family_name": "Hofmeister",
+            "given_name": "Elisabetha",
+            "birth_year": 1628,
+            "death_year": 1642
+        },
+        {
+            "person_number": 3,
+            "family_id": null,
+            "father_family_id": null,
+            "husband_family_id": "Geiger0005",
+            "family_name": "v. Orelli",
+            "given_name": "Susanna",
+            "birth_year": 1640,
+            "death_year": 1681
+        },
+        {
+            "person_number": 4,
+            "family_id": "Geiger0006",
+            "father_family_id": "Geiger0005",
+            "family_name": "Geiger",
+            "given_name": "Rudolf",
+            "birth_year": 1629,
+            "death_year": null
+        },
+        {
+            "person_number": 5,
+            "family_id": "Geiger0007",
+            "father_family_id": "Geiger0005",
+            "family_name": "Geiger",
+            "given_name": "Heinrich",
+            "birth_year": 1630,
+            "death_year": 1632
+        },
+        {
+            "person_number": 6,
+            "family_id": "Geiger0008",
+            "father_family_id": "Geiger0005",
+            "family_name": "Geiger",
+            "given_name": "Christoph",
+            "birth_year": 1632,
+            "death_year": null
+        },
+        {
+            "person_number": 7,
+            "family_id": "Geiger0009",
+            "father_family_id": "Geiger0005",
+            "family_name": "Geiger",
+            "given_name": "Caspar",
+            "birth_year": 1635,
+            "death_year": 1640
+        },
+        {
+            "person_number": 8,
+            "family_id": "Geiger0006",
+            "father_family_id": null,
+            "family_name": "Geiger",
+            "given_name": "Christoph",
+            "birth_year": 1607,
+            "death_year": 1665,
+            "profession": "Pfarrer"
+        },
+        {
+            "person_number": 9,
+            "family_id": null,
+            "husband_family_id": "Geiger0006",
+            "family_name": "Billeter",
+            "given_name": "Susanna",
+            "birth_year": 1633,
+            "death_year": 1644
+        },
+        {
+            "person_number": 10,
+            "family_id": null,
+            "husband_family_id": "Geiger0006",
+            "family_name": "Bodmer",
+            "given_name": "Magdalena",
+            "birth_year": null,
+            "death_year": null
+        },
+        {
+            "person_number": 11,
+            "family_id": "Geiger0010",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Conrad",
+            "birth_year": 1635,
+            "death_year": null
+        },
+        {
+            "person_number": 12,
+            "family_id": "Geiger0011",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Barbara",
+            "birth_year": 1637,
+            "death_year": 1642
+        },
+        {
+            "person_number": 13,
+            "family_id": "Geiger0012",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Christoph",
+            "birth_year": 1651,
+            "death_year": null
+        },
+        {
+            "person_number": 14,
+            "family_id": "Geiger0013",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Hs. Caspar",
+            "birth_year": 1651,
+            "death_year": null
+        },
+        {
+            "person_number": 15,
+            "family_id": "Geiger0014",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Heinrich",
+            "birth_year": 1641,
+            "death_year": null
+        },
+        {
+            "person_number": 16,
+            "family_id": "Geiger0015",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Anna",
+            "birth_year": 1645,
+            "death_year": 1694
+        },
+        {
+            "person_number": 17,
+            "family_id": "Geiger0016",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Georg",
+            "birth_year": 1648,
+            "death_year": null
+        },
+        {
+            "person_number": 18,
+            "family_id": "Geiger0017",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Rudolf",
+            "birth_year": 1653,
+            "death_year": null
+        },
+        {
+            "person_number": 19,
+            "family_id": "Geiger0018",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "A. Maria",
+            "birth_year": 1644,
+            "death_year": 1729
+        },
+        {
+            "person_number": 20,
+            "family_id": null,
+            "husband_family_id": "Geiger0013",
+            "family_name": "Heiz",
+            "given_name": "Caspar",
+            "birth_year": null,
+            "death_year": 1724
+        },
+        {
+            "person_number": 21,
+            "family_id": null,
+            "husband_family_id": "Geiger0014",
+            "family_name": "Widerkehr",
+            "given_name": "Heinrich",
+            "birth_year": null,
+            "death_year": null
+        },
+        {
+            "person_number": 22,
+            "family_id": "Geiger0019",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Conrad",
+            "birth_year": 1640,
+            "death_year": 1662
+        },
+        {
+            "person_number": 23,
+            "family_id": "Geiger0020",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Margaretha",
+            "birth_year": 1644,
+            "death_year": 1672
+        },
+        {
+            "person_number": 24,
+            "family_id": null,
+            "husband_family_id": "Geiger0016",
+            "family_name": "Schaufelberger",
+            "given_name": "Jakob",
+            "birth_year": null,
+            "death_year": null
+        },
+        {
+            "person_number": 25,
+            "family_id": "Geiger0021",
+            "father_family_id": "Geiger0006",
+            "family_name": "Geiger",
+            "given_name": "Hs. Friedrich",
+            "birth_year": 1652,
+            "death_year": null
+        }
+    ],
+    "relations": [
+        {
+            "person_number_1": 1,
+            "person_number_2": 2,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 1,
+            "person_number_2": 3,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 1,
+            "person_number_2": 4,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 1,
+            "person_number_2": 5,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 1,
+            "person_number_2": 6,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 1,
+            "person_number_2": 7,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 9,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 10,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 11,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 12,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 13,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 14,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 15,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 16,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 17,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 18,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 19,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 20,
+            "person_number_2": 19,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 21,
+            "person_number_2": 19,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 22,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 23,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 24,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 8,
+            "person_number_2": 25,
+            "relation_type": "FATHER_CHILD"
+        }
+    ]
+}
