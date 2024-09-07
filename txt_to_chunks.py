@@ -14,32 +14,43 @@ Aim: This CLI app creates chunks of text to feed into chunk_to_graph.py
 Dependencies:
 * Python 3.11
 * argparse
+* ... (see imports)
 
 Mains steps:
 
-* Travers a directory containing data regarding Zurich families in a number of formats
+* Traverse a directory containing data regarding Zurich families in a number of formats
     * source https://www.e-manuscripta.ch/zuzcmi/content/titleinfo/3530958
     * transcription https://opendata.swiss/de/dataset/promptuarium-genealogicum-des-carl-keller-escher
     * transcription rules https://www.zb.uzh.ch/storage/app/media/ueber-uns/Citizen-Science/Familiengeschichte/Stylesheet_Transkriptionen_Familiengeschichte.pdf
 * Choose relevant text files
 * Prepare files for splitting
-    * Put footnotes back into their context
-    * optionally strip html tags from markdown
-    * remove hyphenation
+    * Put footnotes back into their context, delimited by markers
+    * strip html tags from markdown
     * Create one document per family
-        * remove repeating headers and footers
-        * remove repeating numbering
 * Split familiy documents into separate person chunks
     * write each person chunk to a new file
-    * keep the file name of the original text files for reference
+
+    
+desideratum:
+* ! Proper testing!
+* ! documentation!
+* ! distinguish between different family stems (e.g. Schaad A, Schaad B, Meyer ...)
+* ! recognize beginning of new person description if preceding "__BLANK__" is not present
+* ! keep the file name of the original text files for reference
+* ! smarter handling of person numbering collisions
+* discard of introdutory text at the beginning of the family descriptions
+* smarter naming of the output files
+* remove repeating headers and footers and comments like "finis"
+* improved stripping of html tags from markdown
+* handling of repeating numbering when a person is mentioned at the end of a page and at the beginning of the next page
+* handling of footnote-anchors without corresponding footnote-text and vice versa
+* more transparancy about shortcuts and discarded information
 
 """
 
 import os
 import re
 import argparse
-import pathlib
-from datetime import date
 import sys
 import logging
 from colorama import just_fix_windows_console, Fore
@@ -64,6 +75,24 @@ parser.add_argument(
 )
 
 parser.add_argument(
+    "-fns",
+    "--fn-delimiter-start",
+    dest="footnote_delimiter_start",
+    required=False,
+    default=" FNS",
+    help="string to mark beginning of footnote",
+)
+
+parser.add_argument(
+    "-fne",
+    "--fn-delimiter-end",
+    dest="footnote_delimiter_end",
+    required=False,
+    default="FNE",
+    help="string to mark end of footnote",
+)
+
+parser.add_argument(
     "-rh",
     "--remove-hyphenation",
     dest="remove_hyphenation",
@@ -71,6 +100,15 @@ parser.add_argument(
     default=True,
     action="store_true",
 )
+
+parser.add_argument(
+    "--remove-html",
+    dest="remove_html",
+    required=False,
+    default=True,
+    action="store_true",
+)
+
 
 parser.add_argument("-v", "--verbose", dest="verbose", action="store_true")
 
@@ -133,7 +171,7 @@ except Exception as e:
 
 
 # traverse the given directory and add all files ending with _md.txt to a list of strings
-md_files = []
+md_files: list[str] = []
 
 for root, dirs, files in os.walk(args.input_directory):
     for file in files:
@@ -146,21 +184,156 @@ if args.verbose:
     # print(md_files)
 
 # Remove items containing the substring "1_Meta" from the list
-md_files = [file for file in md_files if "1_Meta" not in file]
+# WARNING: this looses some families
+md_files: list[str] = [file for file in md_files if "1_Meta" not in file]
+md_files: list[str] = [file for file in md_files if "Abgestorbne" not in file]
 
 #  Prepare files for splitting
 # ==============================================================================
 
-# Put footnotes back into their context
+family_pattern: re.Pattern[str] = re.compile(
+    r"[\/\\]data[\/\\](von\s+)?[a-zA-ZäöüÄÖÜ]+((\s+(v(om|\.|on)\s+)[a-zA-ZäöüÄÖÜ]+))?"
+)
+
+# write text files to list of strings
+texts: list[list[str]] = []
+for file in md_files:
+    with open(file, "r", encoding="utf-8") as f:
+        texts.append(
+            [
+                f.read(),
+                file,
+                family_pattern.search(file)
+                .group()
+                .replace(os.sep + "data" + os.sep, ""),
+            ]
+        )
+
+# Put footnotes back into their context:
+
+# regex pattern to match the footnote number
+fn_pattern: re.Pattern[str] = re.compile(r"\[\^fn\d+\]")
+
+# regex pattern to match the footnote text delimited by [^fn##]: and following label [^fn##] using a lookahead and allowing for newlines
+
+fn_text_pattern: re.Pattern[str] = re.compile(
+    r"^(\[\^fn\d+\]:\s*(.*?))(?=(\n\s?\[\^fn\d+\]|$(?![\r\n])))",
+    re.DOTALL | re.MULTILINE,
+)
+
+# iterate over the footnotes and check if a footnote text is found and whether it is preceded by a footnote anchor with the corresponding number earlier in the string
+sublist: list[str]
+text: str
+for sublist in texts:
+    for text in sublist:
+
+        # optionally remove hyphenation
+        if args.remove_hyphenation:
+            text = re.sub(r"(\w+)-\n(\w+)", r"\1\2", text)
+
+        fn_matches: list[re.Match[str]] = fn_pattern.finditer(text)
+        for match in fn_matches:
+            fn_text_match: re.Match[str] = fn_text_pattern.search(text, match.end())
+            if fn_text_match:
+
+                # check if the corresponding footnote anchor is missing before trying to replace it by the footnote text
+                if not fn_text_match.group(1):
+                    logging.warning(
+                        f"Footnote text {fn_text_match.group(1)} has no corresponding anchor in text {text}"
+                    )
+                    continue
+                else:
+                    # replace the footnote anchor with the footnote text
+                    text = text.replace(
+                        str(match.group()),
+                        args.footnote_delimiter_start
+                        + str(fn_text_match.group(2)).strip()
+                        + args.footnote_delimiter_end,
+                        1,
+                    )
+                    # remove the footnote text from the text
+                    text = re.sub(fn_text_pattern, "", text, 1)
+                    texts[texts.index(sublist)][0] = text
 
 
+# output the family names from the texts list
+if args.verbose:
+    for sublist in texts:
+        print(sublist[2])
 
+# append all the texts regarding the same family to one string joined by two newlines
+# and write the string to a new set in the form: familyname: text
+# Warning: here we loose the file name of the original text files for reference!
 
-#     * optionally strip html tags from markdown
-#     * remove hyphenation
-#     * Create one document per family
-#         * remove repeating headers and footers
-#         * remove repeating numbering
-# * Split familiy documents into separate person chunks
-#     * write each person chunk to a new file
-#     * keep the file name of the original text files for reference
+# create a dictionary to store the texts by family
+family_texts: dict[str, str] = {}
+
+for sublist in texts:
+    if sublist[2] in family_texts:
+        family_texts[sublist[2]] += "\n\n" + sublist[0]
+    else:
+        family_texts[sublist[2]] = sublist[0]
+
+if args.verbose:
+    print(family_texts)
+
+# remove any html tags from the family texts
+if args.remove_html:
+    html_pattern: re.Pattern[str] = re.compile(r"<.*?>")
+    for family in family_texts:
+        family_texts[family] = html_pattern.sub("", family_texts[family])
+
+# regex pattern to match [linebreak]"__BLANK__"[linebreak][digit] (lookahead so as not including the digit)
+blank_pattern: re.Pattern[str] = re.compile(r"\n__BLANK__\n(?=\d)")
+
+# iterate over the dictionary and replace the blank_pattern by the String "NEWFILE"
+
+for family in family_texts:
+    family_texts[family] = blank_pattern.sub("\nNEWFILE\n", family_texts[family])
+
+# split text for each family into separate person files at the marker NEWFILE named [familyname]_[first three chars at beginning of text].txt
+# and write the text to the output directory as utf-8 encoded text files
+
+# create the output directory if it doesn't exist
+if not os.path.exists(args.output_directory):
+    os.makedirs(args.output_directory)
+
+# iterate over the dictionary and write output the family texts split by the marker NEWFILE and using the family name and the first three characters of the text as the file name
+with alive_bar(len(family_texts)) as bar:
+    for family in family_texts:
+        family_text: str = family_texts[family]
+        family_text = family_text.split("NEWFILE")
+        for i, person in enumerate(family_text):
+            # remove empty lines at the beginning and ending of the person chunks
+            person = person.strip()
+            filename_suffix: str = re.sub(
+                r"\\.*",
+                "",
+                re.sub(
+                    r"\s+.*",
+                    "",
+                    re.sub(
+                        r"\.*", "", re.sub(r"/.*", "", person[:3].replace(" ", "_"))
+                    ),
+                ),
+            )
+            if person == "":
+                continue
+            # handle collisions: check if the file already exists and append an underline to the filename
+            while os.path.exists(
+                os.path.join(
+                    args.output_directory,
+                    f"{family}_{filename_suffix}.txt",
+                )
+            ):
+                filename_suffix += "_"
+            with open(
+                os.path.join(
+                    args.output_directory,
+                    f"{family}_{filename_suffix}.txt",
+                ),
+                "w",
+                encoding="utf-8",
+            ) as f:
+                f.write(person)
+        bar()
