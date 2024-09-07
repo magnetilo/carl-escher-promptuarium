@@ -2,6 +2,29 @@
 
 Challenge...
 
+```json
+“relations”: [
+        {
+            “person_number_1”: 1, 
+            “person_number_2”: 2, 
+            “relation_type”: “HUSBAND_WIFE”
+        },
+        {
+            “person_number_1”: 1,
+            “person_number_2”: 3,
+            “relation_type”: “FATHER_CHILD”
+        },
+        {
+            “person_number_1”: 2,
+            “person_number_2”: 3,
+            “relation_type”: “MOTHER_CHILD”
+        },
+        {
+            “person_number_1”: 1,
+            “person_number_2”: 4,
+            “relation_type”: “FATHER_CHILD”
+        }
+```
 ![test-img](/img/logo.png)
 
 Content:
