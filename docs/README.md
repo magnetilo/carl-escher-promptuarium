@@ -1,6 +1,36 @@
 # GLAMhack24 - Keller-Escher's Promptuarium
 
 Challenge...
+```json
+“persons”: [
+        {
+            “person_number”: 1,
+            "family_id": "Billeter0001",
+            "father_family_id": null,
+            "family_name": "Billeter",
+            "surname": "Heinrich",
+            "birth_year": 1613,
+            "death_year": None,
+            “profession”: “Pfister”,
+            “origin”: “Mänedorf”
+        },
+        {
+            "family_id": None,
+            "father_family_id": None,
+            "family_name": "Wirth",
+            "surname": "Aa Maria",
+            "birth_year": None,
+            "death_year": None
+        },
+        {
+            "family_id": "Billeter0002",
+            "father_family_id": "Billeter0001",
+            "family_name": "Billeter",
+            "surname": "Hs. Caspar",
+            "birth_year": 1613,
+            "death_year": None
+        },
+```
 
 ```json
 “relations”: [
