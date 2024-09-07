@@ -5,608 +5,1218 @@
   </meta>
   <graph defaultedgetype="directed" mode="static" name="">
     <attributes mode="static" class="edge">
-      <attribute id="8" title="relation_type" type="string" />
+      <attribute id="12" title="relation_type" type="string" />
     </attributes>
     <attributes mode="static" class="node">
-      <attribute id="0" title="family_id" type="string" />
-      <attribute id="1" title="father_family_id" type="string" />
-      <attribute id="2" title="family_name" type="string" />
-      <attribute id="3" title="surname" type="string" />
-      <attribute id="4" title="birth_year" type="string" />
-      <attribute id="5" title="death_year" type="string" />
-      <attribute id="6" title="node_label" type="string" />
-      <attribute id="7" title="node_weight" type="long" />
+      <attribute id="0" title="person_number" type="string" />
+      <attribute id="1" title="family_id" type="string" />
+      <attribute id="2" title="father_family_id" type="string" />
+      <attribute id="3" title="family_name" type="string" />
+      <attribute id="4" title="given_name" type="string" />
+      <attribute id="5" title="birth_year" type="string" />
+      <attribute id="6" title="death_year" type="string" />
+      <attribute id="7" title="profession" type="string" />
+      <attribute id="8" title="husband_family_id" type="string" />
+      <attribute id="9" title="origin" type="string" />
+      <attribute id="10" title="node_label" type="string" />
+      <attribute id="11" title="node_weight" type="long" />
     </attributes>
     <nodes>
-      <node id="23fd4a98-a063-48b3-a2c6-d5eacade5af9" label="23fd4a98-a063-48b3-a2c6-d5eacade5af9">
+      <node id="950db3ad-7797-4bdb-b0d4-740a9b200e25" label="950db3ad-7797-4bdb-b0d4-740a9b200e25">
         <attvalues>
-          <attvalue for="0" value="Billeter0001" />
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="Geiger0005" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Rudolf" />
+          <attvalue for="5" value="1603" />
+          <attvalue for="6" value="1662" />
+          <attvalue for="7" value="Dr. Med. Prof. physic. &amp; Chorherr" />
+          <attvalue for="8" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Rudolf 1603" />
+          <attvalue for="11" value="19" />
+        </attvalues>
+      </node>
+      <node id="3a0b894c-564e-4ff4-ba2d-bdb2971b4d51" label="3a0b894c-564e-4ff4-ba2d-bdb2971b4d51">
+        <attvalues>
+          <attvalue for="0" value="2" />
           <attvalue for="1" value="None" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Heinrich" />
-          <attvalue for="4" value="1613" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Heinrich 1613" />
-          <attvalue for="7" value="23" />
+          <attvalue for="2" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Hofmeister" />
+          <attvalue for="4" value="Elisabetha" />
+          <attvalue for="5" value="1628" />
+          <attvalue for="6" value="1642" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Elisabetha 1628" />
+          <attvalue for="11" value="0" />
         </attvalues>
       </node>
-      <node id="0b56afab-50b9-45f6-af67-60b6bb8a555f" label="0b56afab-50b9-45f6-af67-60b6bb8a555f">
+      <node id="f1d09ead-37ce-4c1b-aa22-adab5a5a9d2b" label="f1d09ead-37ce-4c1b-aa22-adab5a5a9d2b">
         <attvalues>
-          <attvalue for="0" value="None" />
+          <attvalue for="0" value="3" />
           <attvalue for="1" value="None" />
-          <attvalue for="2" value="Wirth" />
-          <attvalue for="3" value="Aa Maria" />
-          <attvalue for="4" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="v. Orelli" />
+          <attvalue for="4" value="Susanna" />
+          <attvalue for="5" value="1640" />
+          <attvalue for="6" value="1681" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Susanna 1640" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="b256b80f-6d85-4cf5-8400-c3403389be0e" label="b256b80f-6d85-4cf5-8400-c3403389be0e">
+        <attvalues>
+          <attvalue for="0" value="4" />
+          <attvalue for="1" value="Geiger0006" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Christoph" />
+          <attvalue for="5" value="1629" />
+          <attvalue for="6" value="1665" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="Pfarrer" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Christoph 1629" />
+          <attvalue for="11" value="12" />
+        </attvalues>
+      </node>
+      <node id="f1e4fa9a-46e6-4ca7-9d4c-966f7ee1f7a7" label="f1e4fa9a-46e6-4ca7-9d4c-966f7ee1f7a7">
+        <attvalues>
+          <attvalue for="0" value="5" />
+          <attvalue for="1" value="Geiger0007" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Heinrich" />
+          <attvalue for="5" value="1630" />
+          <attvalue for="6" value="1632" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Heinrich 1630" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="3666ad00-5122-4472-8b88-38042dd3d8b8" label="3666ad00-5122-4472-8b88-38042dd3d8b8">
+        <attvalues>
+          <attvalue for="0" value="6" />
+          <attvalue for="1" value="Geiger0008" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Christoph" />
+          <attvalue for="5" value="1632" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Christoph 1632" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="ff76fd9a-0dc6-4ad5-be8f-c0f1566a6004" label="ff76fd9a-0dc6-4ad5-be8f-c0f1566a6004">
+        <attvalues>
+          <attvalue for="0" value="7" />
+          <attvalue for="1" value="Geiger0009" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Caspar" />
+          <attvalue for="5" value="1635" />
+          <attvalue for="6" value="1640" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Caspar 1635" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="ba132bea-d35f-4852-9460-740f220db31f" label="ba132bea-d35f-4852-9460-740f220db31f">
+        <attvalues>
+          <attvalue for="0" value="9" />
+          <attvalue for="1" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Susanna" />
+          <attvalue for="5" value="1633" />
+          <attvalue for="6" value="1644" />
+          <attvalue for="2" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Susanna 1633" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="8042ec80-7595-4ded-81ae-010c0b18ef21" label="8042ec80-7595-4ded-81ae-010c0b18ef21">
+        <attvalues>
+          <attvalue for="0" value="10" />
+          <attvalue for="1" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Bodmer" />
+          <attvalue for="4" value="Magdalena" />
           <attvalue for="5" value="None" />
-          <attvalue for="6" value="Aa Maria None" />
-          <attvalue for="7" value="23" />
+          <attvalue for="6" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Magdalena None" />
+          <attvalue for="11" value="0" />
         </attvalues>
       </node>
-      <node id="98a248a1-5191-4003-87a9-da3415e9367d" label="98a248a1-5191-4003-87a9-da3415e9367d">
+      <node id="fd92b4cf-9b5a-4753-be2c-e20990b7a00e" label="fd92b4cf-9b5a-4753-be2c-e20990b7a00e">
         <attvalues>
-          <attvalue for="0" value="Billeter0002" />
-          <attvalue for="1" value="Billeter0001" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Hs. Caspar" />
-          <attvalue for="4" value="1613" />
-          <attvalue for="5" value="1654" />
-          <attvalue for="6" value="Hs. Caspar 1613" />
-          <attvalue for="7" value="13" />
+          <attvalue for="0" value="11" />
+          <attvalue for="1" value="Geiger0010" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Conrad" />
+          <attvalue for="5" value="1635" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Conrad 1635" />
+          <attvalue for="11" value="0" />
         </attvalues>
       </node>
-      <node id="87797615-94e3-4b11-ab1d-5ea4c1552806" label="87797615-94e3-4b11-ab1d-5ea4c1552806">
+      <node id="cc7c714a-d0f4-4fb6-a022-4247eeeafbd6" label="cc7c714a-d0f4-4fb6-a022-4247eeeafbd6">
         <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0001" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Susanna" />
-          <attvalue for="4" value="1615" />
+          <attvalue for="0" value="12" />
+          <attvalue for="1" value="Geiger0011" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Barbara" />
+          <attvalue for="5" value="1637" />
+          <attvalue for="6" value="1642" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Barbara 1637" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="27e5cbd0-ce15-4732-9360-8f304df829f5" label="27e5cbd0-ce15-4732-9360-8f304df829f5">
+        <attvalues>
+          <attvalue for="0" value="13" />
+          <attvalue for="1" value="Geiger0012" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Christoph" />
+          <attvalue for="5" value="1651" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Christoph 1651" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="11ea2a09-43e9-4f7d-a38c-e5898a78932b" label="11ea2a09-43e9-4f7d-a38c-e5898a78932b">
+        <attvalues>
+          <attvalue for="0" value="14" />
+          <attvalue for="1" value="Geiger0013" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Hs. Caspar" />
+          <attvalue for="5" value="1651" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Hs. Caspar 1651" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="e4b3632b-9f77-43f5-a752-84de1cc1e5c4" label="e4b3632b-9f77-43f5-a752-84de1cc1e5c4">
+        <attvalues>
+          <attvalue for="0" value="15" />
+          <attvalue for="1" value="Geiger0014" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Heinrich" />
+          <attvalue for="5" value="1641" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Heinrich 1641" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="39c51107-2a1d-4fa0-95fa-eecaf3b5d37d" label="39c51107-2a1d-4fa0-95fa-eecaf3b5d37d">
+        <attvalues>
+          <attvalue for="0" value="16" />
+          <attvalue for="1" value="Geiger0015" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Anna" />
+          <attvalue for="5" value="1645" />
+          <attvalue for="6" value="1694" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Anna 1645" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="81781954-094a-498b-b763-0fc1f5df093a" label="81781954-094a-498b-b763-0fc1f5df093a">
+        <attvalues>
+          <attvalue for="0" value="17" />
+          <attvalue for="1" value="Geiger0016" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Georg" />
+          <attvalue for="5" value="1648" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Georg 1648" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="09edca95-b025-45b3-b924-adfcfe661d3f" label="09edca95-b025-45b3-b924-adfcfe661d3f">
+        <attvalues>
+          <attvalue for="0" value="18" />
+          <attvalue for="1" value="Geiger0017" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Rudolf" />
+          <attvalue for="5" value="1653" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Rudolf 1653" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="b3e5cfdb-357e-469d-898a-0a938e3faec7" label="b3e5cfdb-357e-469d-898a-0a938e3faec7">
+        <attvalues>
+          <attvalue for="0" value="19" />
+          <attvalue for="1" value="Geiger0018" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="A. Maria" />
           <attvalue for="5" value="1644" />
-          <attvalue for="6" value="Susanna 1615" />
-          <attvalue for="7" value="0" />
+          <attvalue for="6" value="1729" />
+          <attvalue for="8" value="Geiger0014" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="A. Maria 1644" />
+          <attvalue for="11" value="0" />
         </attvalues>
       </node>
-      <node id="73af3037-6091-4b06-a1a7-0def4fc74b9f" label="73af3037-6091-4b06-a1a7-0def4fc74b9f">
+      <node id="98f91d12-3834-4876-b045-c95be1883f4e" label="98f91d12-3834-4876-b045-c95be1883f4e">
         <attvalues>
-          <attvalue for="0" value="Geiger0006" />
+          <attvalue for="0" value="20" />
           <attvalue for="1" value="None" />
-          <attvalue for="2" value="Geiger" />
-          <attvalue for="3" value="Christoph" />
-          <attvalue for="4" value="None" />
+          <attvalue for="8" value="Geiger0013" />
+          <attvalue for="3" value="Heiz" />
+          <attvalue for="4" value="Caspar" />
           <attvalue for="5" value="None" />
-          <attvalue for="6" value="Christoph None" />
-          <attvalue for="7" value="0" />
+          <attvalue for="6" value="1724" />
+          <attvalue for="2" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Caspar None" />
+          <attvalue for="11" value="0" />
         </attvalues>
       </node>
-      <node id="67eba151-a4bb-497c-b70c-6553db7466d3" label="67eba151-a4bb-497c-b70c-6553db7466d3">
+      <node id="a9d4d388-72f7-4d76-b30c-d055a3f23452" label="a9d4d388-72f7-4d76-b30c-d055a3f23452">
         <attvalues>
-          <attvalue for="0" value="Billeter0003" />
+          <attvalue for="0" value="21" />
+          <attvalue for="1" value="None" />
+          <attvalue for="8" value="Geiger0014" />
+          <attvalue for="3" value="Widerkehr" />
+          <attvalue for="4" value="Heinrich" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Heinrich None" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="12b7a38a-4f34-42c6-aa6c-fcf014276f05" label="12b7a38a-4f34-42c6-aa6c-fcf014276f05">
+        <attvalues>
+          <attvalue for="0" value="22" />
+          <attvalue for="1" value="Geiger0019" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Conrad" />
+          <attvalue for="5" value="1640" />
+          <attvalue for="6" value="1662" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Conrad 1640" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="edeb17e1-ca57-4586-aca5-f1f48e1e3075" label="edeb17e1-ca57-4586-aca5-f1f48e1e3075">
+        <attvalues>
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="Geiger0020" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Margaretha" />
+          <attvalue for="5" value="1644" />
+          <attvalue for="6" value="1672" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Margaretha 1644" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="c7d7ada9-77fb-4bf1-832c-1c258b375b9c" label="c7d7ada9-77fb-4bf1-832c-1c258b375b9c">
+        <attvalues>
+          <attvalue for="0" value="24" />
+          <attvalue for="1" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Schaufelberger" />
+          <attvalue for="4" value="Jakob" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Jakob None" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="136be896-fcda-47bd-9bef-c97b14b004f3" label="136be896-fcda-47bd-9bef-c97b14b004f3">
+        <attvalues>
+          <attvalue for="0" value="25" />
+          <attvalue for="1" value="Geiger0021" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Geiger" />
+          <attvalue for="4" value="Hs. Friedrich" />
+          <attvalue for="5" value="1652" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Hs. Friedrich 1652" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="07b34c6a-8701-4ded-91fa-d9cb64ae6147" label="07b34c6a-8701-4ded-91fa-d9cb64ae6147">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="Billeter0005" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Caspar" />
+          <attvalue for="5" value="1641" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="Schloßer" />
+          <attvalue for="9" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="10" value="Caspar 1641" />
+          <attvalue for="11" value="9" />
+        </attvalues>
+      </node>
+      <node id="8123a581-dce2-424d-9e80-a0688ca031f5" label="8123a581-dce2-424d-9e80-a0688ca031f5">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Ulrich" />
+          <attvalue for="4" value="Anna" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Anna None" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="842c4f15-5809-4ecf-9349-c0ef61c89def" label="842c4f15-5809-4ecf-9349-c0ef61c89def">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="Billeter0006" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Heinrich" />
+          <attvalue for="5" value="1639" />
+          <attvalue for="6" value="1700" />
+          <attvalue for="7" value="Pfister" />
+          <attvalue for="9" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="10" value="Heinrich 1639" />
+          <attvalue for="11" value="7" />
+        </attvalues>
+      </node>
+      <node id="4fd2a424-3fdf-48ba-a728-c9dcf6f20c07" label="4fd2a424-3fdf-48ba-a728-c9dcf6f20c07">
+        <attvalues>
+          <attvalue for="0" value="4" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Räuchli" />
+          <attvalue for="4" value="Elisabetha" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Elisabetha None" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="df4ada6c-e340-4dec-8a46-c9f2596d653a" label="df4ada6c-e340-4dec-8a46-c9f2596d653a">
+        <attvalues>
+          <attvalue for="0" value="5" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Vogel" />
+          <attvalue for="4" value="Anna" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="1719" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Anna None" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="e49c69de-749b-49a4-a76f-8748c9c05b22" label="e49c69de-749b-49a4-a76f-8748c9c05b22">
+        <attvalues>
+          <attvalue for="0" value="10" />
+          <attvalue for="1" value="Billeter0007" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Elisabetha" />
+          <attvalue for="5" value="1670" />
+          <attvalue for="6" value="1724" />
+          <attvalue for="7" value="Pfister" />
+          <attvalue for="9" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="10" value="Elisabetha 1670" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="3c69ab35-1d08-49f2-a0e9-9da44e4a2823" label="3c69ab35-1d08-49f2-a0e9-9da44e4a2823">
+        <attvalues>
+          <attvalue for="0" value="11" />
+          <attvalue for="1" value="Billeter0008" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Anna" />
+          <attvalue for="5" value="1672" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Anna 1672" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="4ef90fe5-8d33-481f-88b0-46bb0b2f468b" label="4ef90fe5-8d33-481f-88b0-46bb0b2f468b">
+        <attvalues>
+          <attvalue for="0" value="12" />
+          <attvalue for="1" value="Billeter0009" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="A. Magdalena" />
+          <attvalue for="5" value="1673" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="A. Magdalena 1673" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="49a437c3-bf1c-43e8-b44a-4d6e0a16b22a" label="49a437c3-bf1c-43e8-b44a-4d6e0a16b22a">
+        <attvalues>
+          <attvalue for="0" value="13" />
+          <attvalue for="1" value="Billeter0010" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Hs. Conrad" />
+          <attvalue for="5" value="1674" />
+          <attvalue for="6" value="1676" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Hs. Conrad 1674" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="f4ccd706-cfd8-4473-895d-048f605c8688" label="f4ccd706-cfd8-4473-895d-048f605c8688">
+        <attvalues>
+          <attvalue for="0" value="10" />
+          <attvalue for="1" value="Billeter0011" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Magdalena" />
+          <attvalue for="5" value="1675" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Magdalena 1675" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="3d17f591-79d3-44a2-80a1-1d77438afffa" label="3d17f591-79d3-44a2-80a1-1d77438afffa">
+        <attvalues>
+          <attvalue for="0" value="11" />
+          <attvalue for="1" value="Billeter0012" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Cleophea" />
+          <attvalue for="5" value="1677" />
+          <attvalue for="6" value="1717" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Cleophea 1677" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="5285e839-505f-4da9-935f-6f6ade8a50ca" label="5285e839-505f-4da9-935f-6f6ade8a50ca">
+        <attvalues>
+          <attvalue for="0" value="12" />
+          <attvalue for="1" value="Billeter0013" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Hs. Heinrich" />
+          <attvalue for="5" value="1679" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Hs. Heinrich 1679" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="a2df66a0-b98c-41a0-8773-886a4df2c4b9" label="a2df66a0-b98c-41a0-8773-886a4df2c4b9">
+        <attvalues>
+          <attvalue for="0" value="13" />
+          <attvalue for="1" value="Billeter0014" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Wilhelm" />
+          <attvalue for="5" value="1681" />
+          <attvalue for="6" value="1713" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Wilhelm 1681" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="78a2288e-5e8a-451b-81d7-34734a47d5a4" label="78a2288e-5e8a-451b-81d7-34734a47d5a4">
+        <attvalues>
+          <attvalue for="0" value="14" />
+          <attvalue for="1" value="Billeter0015" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Dorothea" />
+          <attvalue for="5" value="1641" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="Posamenter" />
+          <attvalue for="9" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="10" value="Dorothea 1641" />
+          <attvalue for="11" value="7" />
+        </attvalues>
+      </node>
+      <node id="26b8f2b1-5e58-4aca-b448-e28061ad16e7" label="26b8f2b1-5e58-4aca-b448-e28061ad16e7">
+        <attvalues>
+          <attvalue for="0" value="15" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Stocker" />
+          <attvalue for="4" value="Elisabetha" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Elisabetha None" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="d6771843-6a58-4f5b-9591-38c6269280b8" label="d6771843-6a58-4f5b-9591-38c6269280b8">
+        <attvalues>
+          <attvalue for="0" value="16" />
+          <attvalue for="1" value="Billeter0016" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Rudolf" />
+          <attvalue for="5" value="1672" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Rudolf 1672" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="bcd8d2f6-000c-4618-aa0f-46714a059cee" label="bcd8d2f6-000c-4618-aa0f-46714a059cee">
+        <attvalues>
+          <attvalue for="0" value="17" />
+          <attvalue for="1" value="Billeter0017" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Ulrich" />
+          <attvalue for="5" value="1674" />
+          <attvalue for="6" value="1676" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Ulrich 1674" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="34a5dbe6-c362-40c4-8153-76abcaa0842b" label="34a5dbe6-c362-40c4-8153-76abcaa0842b">
+        <attvalues>
+          <attvalue for="0" value="18" />
+          <attvalue for="1" value="Billeter0018" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Barbara" />
+          <attvalue for="5" value="1676" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Barbara 1676" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="580197a4-401a-44ee-a0dd-8d6b6d22aea6" label="580197a4-401a-44ee-a0dd-8d6b6d22aea6">
+        <attvalues>
+          <attvalue for="0" value="19" />
+          <attvalue for="1" value="Billeter0019" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Caspar" />
+          <attvalue for="5" value="1678" />
+          <attvalue for="6" value="1747" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Caspar 1678" />
+          <attvalue for="11" value="2" />
+        </attvalues>
+      </node>
+      <node id="c9d4a8fb-f1f5-4931-b0b5-9d6e7c4d54d1" label="c9d4a8fb-f1f5-4931-b0b5-9d6e7c4d54d1">
+        <attvalues>
+          <attvalue for="0" value="20" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Hofmeister" />
+          <attvalue for="4" value="Regula" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Regula None" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="5cf527ff-235a-4739-b5b6-a9bb4b8aac10" label="5cf527ff-235a-4739-b5b6-a9bb4b8aac10">
+        <attvalues>
+          <attvalue for="0" value="21" />
+          <attvalue for="1" value="Billeter0020" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Maria" />
+          <attvalue for="5" value="1714" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Maria 1714" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="cffaf944-166a-47fb-848d-0aea5aab386a" label="cffaf944-166a-47fb-848d-0aea5aab386a">
+        <attvalues>
+          <attvalue for="0" value="22" />
+          <attvalue for="1" value="Billeter0021" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Dorothea" />
+          <attvalue for="5" value="1720" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Dorothea 1720" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="36b7e090-2519-425b-876b-3a1fd209ca66" label="36b7e090-2519-425b-876b-3a1fd209ca66">
+        <attvalues>
+          <attvalue for="0" value="23" />
+          <attvalue for="1" value="Billeter0022" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Joh. Christoph" />
+          <attvalue for="5" value="1705" />
+          <attvalue for="6" value="1773" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Joh. Christoph 1705" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="1c195cfa-2c03-49b0-82e8-5471b0e351fe" label="1c195cfa-2c03-49b0-82e8-5471b0e351fe">
+        <attvalues>
+          <attvalue for="0" value="24" />
+          <attvalue for="1" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Hirzel" />
+          <attvalue for="4" value="Regula" />
+          <attvalue for="5" value="None" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Regula None" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="6fc60d32-ef4b-4dcc-976d-5653de627359" label="6fc60d32-ef4b-4dcc-976d-5653de627359">
+        <attvalues>
+          <attvalue for="0" value="1" />
           <attvalue for="1" value="Billeter0001" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Adrian" />
-          <attvalue for="4" value="1617" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Heinrich" />
           <attvalue for="5" value="None" />
-          <attvalue for="6" value="Adrian 1617" />
-          <attvalue for="7" value="0" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="Pfister" />
+          <attvalue for="9" value="Mänedorf" />
+          <attvalue for="8" value="None" />
+          <attvalue for="10" value="Heinrich None" />
+          <attvalue for="11" value="27" />
         </attvalues>
       </node>
-      <node id="50a4a66b-2f86-48d9-a862-efdd5fd62458" label="50a4a66b-2f86-48d9-a862-efdd5fd62458">
+      <node id="3b8dc03b-1898-4126-9a09-db2bb66dea2a" label="3b8dc03b-1898-4126-9a09-db2bb66dea2a">
         <attvalues>
-          <attvalue for="0" value="None" />
+          <attvalue for="0" value="2" />
           <attvalue for="1" value="None" />
-          <attvalue for="2" value="Irminger" />
-          <attvalue for="3" value="Dorothea" />
-          <attvalue for="4" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="3" value="Wirth" />
+          <attvalue for="4" value="Anna Maria" />
           <attvalue for="5" value="None" />
-          <attvalue for="6" value="Dorothea None" />
-          <attvalue for="7" value="0" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Anna Maria None" />
+          <attvalue for="11" value="27" />
         </attvalues>
       </node>
-      <node id="828a582c-7551-43da-9473-02681371efe5" label="828a582c-7551-43da-9473-02681371efe5">
+      <node id="c7ee8913-ce9b-405d-8e82-dbfad77453fa" label="c7ee8913-ce9b-405d-8e82-dbfad77453fa">
         <attvalues>
-          <attvalue for="0" value="Jakob0003" />
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="Billeter0002" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Hans Caspar" />
+          <attvalue for="5" value="1613" />
+          <attvalue for="6" value="1654" />
+          <attvalue for="7" value="Pfarrer" />
+          <attvalue for="8" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Hans Caspar 1613" />
+          <attvalue for="11" value="25" />
+        </attvalues>
+      </node>
+      <node id="56204e37-10fa-4267-9ef4-a1575825ec46" label="56204e37-10fa-4267-9ef4-a1575825ec46">
+        <attvalues>
+          <attvalue for="0" value="4" />
           <attvalue for="1" value="None" />
-          <attvalue for="2" value="Jakob" />
-          <attvalue for="3" value="T. Joh." />
-          <attvalue for="4" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Susanna" />
           <attvalue for="5" value="None" />
-          <attvalue for="6" value="T. Joh. None" />
-          <attvalue for="7" value="13" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Susanna None" />
+          <attvalue for="11" value="0" />
         </attvalues>
       </node>
-      <node id="e26f3a51-422b-4456-bf5a-e799a9b5fabd" label="e26f3a51-422b-4456-bf5a-e799a9b5fabd">
+      <node id="98c3c827-547e-4252-8436-8bb9dea79874" label="98c3c827-547e-4252-8436-8bb9dea79874">
         <attvalues>
-          <attvalue for="0" value="None" />
+          <attvalue for="0" value="5" />
+          <attvalue for="1" value="Billeter0003" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Hs. Jakob" />
+          <attvalue for="5" value="1635" />
+          <attvalue for="6" value="1692" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Hs. Jakob 1635" />
+          <attvalue for="11" value="0" />
+        </attvalues>
+      </node>
+      <node id="df523abf-eafe-41cc-bbb6-6f1f5b3cf793" label="df523abf-eafe-41cc-bbb6-6f1f5b3cf793">
+        <attvalues>
+          <attvalue for="0" value="6" />
           <attvalue for="1" value="None" />
-          <attvalue for="2" value="Irminger" />
-          <attvalue for="3" value="Dorothea" />
-          <attvalue for="4" value="None" />
+          <attvalue for="8" value="Billeter0005" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Irminger" />
+          <attvalue for="4" value="Dorothea" />
           <attvalue for="5" value="None" />
-          <attvalue for="6" value="Dorothea None" />
-          <attvalue for="7" value="3" />
+          <attvalue for="6" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Dorothea None" />
+          <attvalue for="11" value="0" />
         </attvalues>
       </node>
-      <node id="473f1ce3-a3cc-4968-a2d1-19ed3f081048" label="473f1ce3-a3cc-4968-a2d1-19ed3f081048">
+      <node id="7cd98ee4-5e14-4274-a6de-dd7317c13bf4" label="7cd98ee4-5e14-4274-a6de-dd7317c13bf4">
         <attvalues>
-          <attvalue for="0" value="Billeter0004" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Hs. Jakob" />
-          <attvalue for="4" value="1635" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Hs. Jakob 1635" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="4662b808-0594-4e85-9d7a-fad1cb993ab1" label="4662b808-0594-4e85-9d7a-fad1cb993ab1">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Elisabetha" />
-          <attvalue for="4" value="1636" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Elisabetha 1636" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="3075f7ec-3811-4370-a87a-6852aba0deaa" label="3075f7ec-3811-4370-a87a-6852aba0deaa">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Emerentiana" />
-          <attvalue for="4" value="1638" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Emerentiana 1638" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="469a05e1-5f98-42f8-ad0a-0fa101da19e8" label="469a05e1-5f98-42f8-ad0a-0fa101da19e8">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="None" />
-          <attvalue for="2" value="Irminger" />
-          <attvalue for="3" value="Dorothea" />
-          <attvalue for="4" value="None" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Dorothea None" />
-          <attvalue for="7" value="3" />
-        </attvalues>
-      </node>
-      <node id="ad5cb31b-e28e-4e26-90aa-1d588b8a9e14" label="ad5cb31b-e28e-4e26-90aa-1d588b8a9e14">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Elisabetha" />
-          <attvalue for="4" value="1636" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Elisabetha 1636" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="ffaece2e-ece3-4870-8e0f-c78e64bb41c4" label="ffaece2e-ece3-4870-8e0f-c78e64bb41c4">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Emerentiana" />
-          <attvalue for="4" value="1638" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Emerentiana 1638" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" label="9ed7678a-caf2-48a0-97cc-28388d6d2ecb">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="None" />
-          <attvalue for="2" value="Irminger" />
-          <attvalue for="3" value="Dorothea" />
-          <attvalue for="4" value="None" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Dorothea None" />
-          <attvalue for="7" value="3" />
-        </attvalues>
-      </node>
-      <node id="cf095ee0-4adf-482f-bff9-20b26b1bc018" label="cf095ee0-4adf-482f-bff9-20b26b1bc018">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Elisabetha" />
-          <attvalue for="4" value="1636" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Elisabetha 1636" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="b517abf1-1659-4349-a14d-d8cde872453f" label="b517abf1-1659-4349-a14d-d8cde872453f">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Emerentiana" />
-          <attvalue for="4" value="1638" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Emerentiana 1638" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="4716ee49-633e-46c5-9e00-944a57543c55" label="4716ee49-633e-46c5-9e00-944a57543c55">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="None" />
-          <attvalue for="2" value="Irminger" />
-          <attvalue for="3" value="Dorothea" />
-          <attvalue for="4" value="None" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Dorothea None" />
-          <attvalue for="7" value="3" />
-        </attvalues>
-      </node>
-      <node id="2b5668cb-83e8-4fa7-a207-6431df5bf0b8" label="2b5668cb-83e8-4fa7-a207-6431df5bf0b8">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Elisabetha" />
-          <attvalue for="4" value="1636" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Elisabetha 1636" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="99cff6fb-8b32-44f7-bb2b-0500c56b33f1" label="99cff6fb-8b32-44f7-bb2b-0500c56b33f1">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Emerentiana" />
-          <attvalue for="4" value="1638" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Emerentiana 1638" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="1a788c02-ea6e-466c-ae87-ce953203876f" label="1a788c02-ea6e-466c-ae87-ce953203876f">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="None" />
-          <attvalue for="2" value="Irminger" />
-          <attvalue for="3" value="Dorothea" />
-          <attvalue for="4" value="None" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Dorothea None" />
-          <attvalue for="7" value="3" />
-        </attvalues>
-      </node>
-      <node id="7e23d677-980d-4678-817c-87c3a63a66b8" label="7e23d677-980d-4678-817c-87c3a63a66b8">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Elisabetha" />
-          <attvalue for="4" value="1636" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Elisabetha 1636" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="9268f8a6-81e5-42ce-94ff-d8ef4da85352" label="9268f8a6-81e5-42ce-94ff-d8ef4da85352">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Emerentiana" />
-          <attvalue for="4" value="1638" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Emerentiana 1638" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="a79cf677-6adc-4829-a972-283fd4af63f6" label="a79cf677-6adc-4829-a972-283fd4af63f6">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="None" />
-          <attvalue for="2" value="Irminger" />
-          <attvalue for="3" value="Dorothea" />
-          <attvalue for="4" value="None" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Dorothea None" />
-          <attvalue for="7" value="3" />
-        </attvalues>
-      </node>
-      <node id="019b5320-ed5d-40ca-a06c-d55e14fdd867" label="019b5320-ed5d-40ca-a06c-d55e14fdd867">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Elisabetha" />
-          <attvalue for="4" value="1636" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Elisabetha 1636" />
-          <attvalue for="7" value="0" />
-        </attvalues>
-      </node>
-      <node id="8da5a576-f7c9-499c-95a1-2f4506182ff5" label="8da5a576-f7c9-499c-95a1-2f4506182ff5">
-        <attvalues>
-          <attvalue for="0" value="None" />
-          <attvalue for="1" value="Billeter0003" />
-          <attvalue for="2" value="Billeter" />
-          <attvalue for="3" value="Emerentiana" />
-          <attvalue for="4" value="1638" />
-          <attvalue for="5" value="None" />
-          <attvalue for="6" value="Emerentiana 1638" />
-          <attvalue for="7" value="0" />
+          <attvalue for="0" value="7" />
+          <attvalue for="1" value="Billeter0004" />
+          <attvalue for="2" value="None" />
+          <attvalue for="3" value="Billeter" />
+          <attvalue for="4" value="Heinrich" />
+          <attvalue for="5" value="1639" />
+          <attvalue for="6" value="None" />
+          <attvalue for="8" value="None" />
+          <attvalue for="7" value="None" />
+          <attvalue for="9" value="None" />
+          <attvalue for="10" value="Heinrich 1639" />
+          <attvalue for="11" value="0" />
         </attvalues>
       </node>
     </nodes>
     <edges>
-      <edge source="23fd4a98-a063-48b3-a2c6-d5eacade5af9" target="0b56afab-50b9-45f6-af67-60b6bb8a555f" id="0" weight="0">
+      <edge source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="3a0b894c-564e-4ff4-ba2d-bdb2971b4d51" id="0" weight="0">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="23fd4a98-a063-48b3-a2c6-d5eacade5af9" target="98a248a1-5191-4003-87a9-da3415e9367d" id="1" weight="1">
+      <edge source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="f1d09ead-37ce-4c1b-aa22-adab5a5a9d2b" id="1" weight="0">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="23fd4a98-a063-48b3-a2c6-d5eacade5af9" target="87797615-94e3-4b11-ab1d-5ea4c1552806" id="2" weight="1">
+      <edge source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="b256b80f-6d85-4cf5-8400-c3403389be0e" id="2" weight="1">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="23fd4a98-a063-48b3-a2c6-d5eacade5af9" target="67eba151-a4bb-497c-b70c-6553db7466d3" id="3" weight="1">
+      <edge source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="f1e4fa9a-46e6-4ca7-9d4c-966f7ee1f7a7" id="3" weight="1">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="0b56afab-50b9-45f6-af67-60b6bb8a555f" target="98a248a1-5191-4003-87a9-da3415e9367d" id="4" weight="1">
+      <edge source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="3666ad00-5122-4472-8b88-38042dd3d8b8" id="4" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="0b56afab-50b9-45f6-af67-60b6bb8a555f" target="87797615-94e3-4b11-ab1d-5ea4c1552806" id="5" weight="1">
+      <edge source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="ff76fd9a-0dc6-4ad5-be8f-c0f1566a6004" id="5" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="0b56afab-50b9-45f6-af67-60b6bb8a555f" target="67eba151-a4bb-497c-b70c-6553db7466d3" id="6" weight="1">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="ba132bea-d35f-4852-9460-740f220db31f" id="6" weight="0">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="50a4a66b-2f86-48d9-a862-efdd5fd62458" id="7" weight="0">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="8042ec80-7595-4ded-81ae-010c0b18ef21" id="7" weight="0">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="e26f3a51-422b-4456-bf5a-e799a9b5fabd" id="8" weight="0">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="fd92b4cf-9b5a-4753-be2c-e20990b7a00e" id="8" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" id="9" weight="1">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="cc7c714a-d0f4-4fb6-a022-4247eeeafbd6" id="9" weight="1">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="4662b808-0594-4e85-9d7a-fad1cb993ab1" id="10" weight="1">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="27e5cbd0-ce15-4732-9360-8f304df829f5" id="10" weight="1">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="3075f7ec-3811-4370-a87a-6852aba0deaa" id="11" weight="1">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="11ea2a09-43e9-4f7d-a38c-e5898a78932b" id="11" weight="1">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="469a05e1-5f98-42f8-ad0a-0fa101da19e8" id="12" weight="0">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="e4b3632b-9f77-43f5-a752-84de1cc1e5c4" id="12" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="ad5cb31b-e28e-4e26-90aa-1d588b8a9e14" id="13" weight="1">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="39c51107-2a1d-4fa0-95fa-eecaf3b5d37d" id="13" weight="1">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="ffaece2e-ece3-4870-8e0f-c78e64bb41c4" id="14" weight="1">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="81781954-094a-498b-b763-0fc1f5df093a" id="14" weight="1">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" id="15" weight="0">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="09edca95-b025-45b3-b924-adfcfe661d3f" id="15" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="cf095ee0-4adf-482f-bff9-20b26b1bc018" id="16" weight="1">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="b3e5cfdb-357e-469d-898a-0a938e3faec7" id="16" weight="1">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="b517abf1-1659-4349-a14d-d8cde872453f" id="17" weight="1">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="12b7a38a-4f34-42c6-aa6c-fcf014276f05" id="17" weight="1">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="4716ee49-633e-46c5-9e00-944a57543c55" id="18" weight="0">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="edeb17e1-ca57-4586-aca5-f1f48e1e3075" id="18" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="2b5668cb-83e8-4fa7-a207-6431df5bf0b8" id="19" weight="1">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="c7d7ada9-77fb-4bf1-832c-1c258b375b9c" id="19" weight="0">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="99cff6fb-8b32-44f7-bb2b-0500c56b33f1" id="20" weight="1">
+      <edge source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="136be896-fcda-47bd-9bef-c97b14b004f3" id="20" weight="1">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="1a788c02-ea6e-466c-ae87-ce953203876f" id="21" weight="0">
+      <edge source="98f91d12-3834-4876-b045-c95be1883f4e" target="b3e5cfdb-357e-469d-898a-0a938e3faec7" id="21" weight="0">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="7e23d677-980d-4678-817c-87c3a63a66b8" id="22" weight="1">
+      <edge source="a9d4d388-72f7-4d76-b30c-d055a3f23452" target="b3e5cfdb-357e-469d-898a-0a938e3faec7" id="22" weight="0">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="9268f8a6-81e5-42ce-94ff-d8ef4da85352" id="23" weight="1">
+      <edge source="07b34c6a-8701-4ded-91fa-d9cb64ae6147" target="8123a581-dce2-424d-9e80-a0688ca031f5" id="23" weight="0">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="a79cf677-6adc-4829-a972-283fd4af63f6" id="24" weight="0">
+      <edge source="07b34c6a-8701-4ded-91fa-d9cb64ae6147" target="842c4f15-5809-4ecf-9349-c0ef61c89def" id="24" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="019b5320-ed5d-40ca-a06c-d55e14fdd867" id="25" weight="1">
+      <edge source="07b34c6a-8701-4ded-91fa-d9cb64ae6147" target="4fd2a424-3fdf-48ba-a728-c9dcf6f20c07" id="25" weight="0">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="98a248a1-5191-4003-87a9-da3415e9367d" target="8da5a576-f7c9-499c-95a1-2f4506182ff5" id="26" weight="1">
+      <edge source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="df4ada6c-e340-4dec-8a46-c9f2596d653a" id="26" weight="0">
         <attvalues>
-          <attvalue for="8" value="FATHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="73af3037-6091-4b06-a1a7-0def4fc74b9f" target="87797615-94e3-4b11-ab1d-5ea4c1552806" id="27" weight="0">
+      <edge source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="e49c69de-749b-49a4-a76f-8748c9c05b22" id="27" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="828a582c-7551-43da-9473-02681371efe5" target="50a4a66b-2f86-48d9-a862-efdd5fd62458" id="28" weight="0">
+      <edge source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="3c69ab35-1d08-49f2-a0e9-9da44e4a2823" id="28" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="828a582c-7551-43da-9473-02681371efe5" target="e26f3a51-422b-4456-bf5a-e799a9b5fabd" id="29" weight="0">
+      <edge source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="4ef90fe5-8d33-481f-88b0-46bb0b2f468b" id="29" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="828a582c-7551-43da-9473-02681371efe5" target="469a05e1-5f98-42f8-ad0a-0fa101da19e8" id="30" weight="0">
+      <edge source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="49a437c3-bf1c-43e8-b44a-4d6e0a16b22a" id="30" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="828a582c-7551-43da-9473-02681371efe5" target="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" id="31" weight="0">
+      <edge source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="f4ccd706-cfd8-4473-895d-048f605c8688" id="31" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="828a582c-7551-43da-9473-02681371efe5" target="4716ee49-633e-46c5-9e00-944a57543c55" id="32" weight="0">
+      <edge source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="3d17f591-79d3-44a2-80a1-1d77438afffa" id="32" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="828a582c-7551-43da-9473-02681371efe5" target="1a788c02-ea6e-466c-ae87-ce953203876f" id="33" weight="0">
+      <edge source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="5285e839-505f-4da9-935f-6f6ade8a50ca" id="33" weight="1">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="828a582c-7551-43da-9473-02681371efe5" target="a79cf677-6adc-4829-a972-283fd4af63f6" id="34" weight="0">
+      <edge source="78a2288e-5e8a-451b-81d7-34734a47d5a4" target="26b8f2b1-5e58-4aca-b448-e28061ad16e7" id="34" weight="0">
         <attvalues>
-          <attvalue for="8" value="HUSBAND_WIFE" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="e26f3a51-422b-4456-bf5a-e799a9b5fabd" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" id="35" weight="1">
+      <edge source="78a2288e-5e8a-451b-81d7-34734a47d5a4" target="d6771843-6a58-4f5b-9591-38c6269280b8" id="35" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="e26f3a51-422b-4456-bf5a-e799a9b5fabd" target="4662b808-0594-4e85-9d7a-fad1cb993ab1" id="36" weight="1">
+      <edge source="78a2288e-5e8a-451b-81d7-34734a47d5a4" target="bcd8d2f6-000c-4618-aa0f-46714a059cee" id="36" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="e26f3a51-422b-4456-bf5a-e799a9b5fabd" target="3075f7ec-3811-4370-a87a-6852aba0deaa" id="37" weight="1">
+      <edge source="78a2288e-5e8a-451b-81d7-34734a47d5a4" target="34a5dbe6-c362-40c4-8153-76abcaa0842b" id="37" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="469a05e1-5f98-42f8-ad0a-0fa101da19e8" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" id="38" weight="1">
+      <edge source="78a2288e-5e8a-451b-81d7-34734a47d5a4" target="580197a4-401a-44ee-a0dd-8d6b6d22aea6" id="38" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="469a05e1-5f98-42f8-ad0a-0fa101da19e8" target="ad5cb31b-e28e-4e26-90aa-1d588b8a9e14" id="39" weight="1">
+      <edge source="580197a4-401a-44ee-a0dd-8d6b6d22aea6" target="c9d4a8fb-f1f5-4931-b0b5-9d6e7c4d54d1" id="39" weight="0">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="469a05e1-5f98-42f8-ad0a-0fa101da19e8" target="ffaece2e-ece3-4870-8e0f-c78e64bb41c4" id="40" weight="1">
+      <edge source="580197a4-401a-44ee-a0dd-8d6b6d22aea6" target="5cf527ff-235a-4739-b5b6-a9bb4b8aac10" id="40" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" id="41" weight="1">
+      <edge source="580197a4-401a-44ee-a0dd-8d6b6d22aea6" target="cffaf944-166a-47fb-848d-0aea5aab386a" id="41" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" target="cf095ee0-4adf-482f-bff9-20b26b1bc018" id="42" weight="1">
+      <edge source="36b7e090-2519-425b-876b-3a1fd209ca66" target="1c195cfa-2c03-49b0-82e8-5471b0e351fe" id="42" weight="0">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" target="b517abf1-1659-4349-a14d-d8cde872453f" id="43" weight="1">
+      <edge source="6fc60d32-ef4b-4dcc-976d-5653de627359" target="3b8dc03b-1898-4126-9a09-db2bb66dea2a" id="43" weight="0">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="4716ee49-633e-46c5-9e00-944a57543c55" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" id="44" weight="1">
+      <edge source="6fc60d32-ef4b-4dcc-976d-5653de627359" target="c7ee8913-ce9b-405d-8e82-dbfad77453fa" id="44" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="4716ee49-633e-46c5-9e00-944a57543c55" target="2b5668cb-83e8-4fa7-a207-6431df5bf0b8" id="45" weight="1">
+      <edge source="6fc60d32-ef4b-4dcc-976d-5653de627359" target="56204e37-10fa-4267-9ef4-a1575825ec46" id="45" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="4716ee49-633e-46c5-9e00-944a57543c55" target="99cff6fb-8b32-44f7-bb2b-0500c56b33f1" id="46" weight="1">
+      <edge source="3b8dc03b-1898-4126-9a09-db2bb66dea2a" target="c7ee8913-ce9b-405d-8e82-dbfad77453fa" id="46" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="MOTHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="1a788c02-ea6e-466c-ae87-ce953203876f" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" id="47" weight="1">
+      <edge source="3b8dc03b-1898-4126-9a09-db2bb66dea2a" target="56204e37-10fa-4267-9ef4-a1575825ec46" id="47" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="MOTHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="1a788c02-ea6e-466c-ae87-ce953203876f" target="7e23d677-980d-4678-817c-87c3a63a66b8" id="48" weight="1">
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="56204e37-10fa-4267-9ef4-a1575825ec46" id="48" weight="0">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="HUSBAND_WIFE" />
         </attvalues>
       </edge>
-      <edge source="1a788c02-ea6e-466c-ae87-ce953203876f" target="9268f8a6-81e5-42ce-94ff-d8ef4da85352" id="49" weight="1">
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="98c3c827-547e-4252-8436-8bb9dea79874" id="49" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="a79cf677-6adc-4829-a972-283fd4af63f6" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" id="50" weight="1">
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="df523abf-eafe-41cc-bbb6-6f1f5b3cf793" id="50" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="a79cf677-6adc-4829-a972-283fd4af63f6" target="019b5320-ed5d-40ca-a06c-d55e14fdd867" id="51" weight="1">
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="7cd98ee4-5e14-4274-a6de-dd7317c13bf4" id="51" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
-      <edge source="a79cf677-6adc-4829-a972-283fd4af63f6" target="8da5a576-f7c9-499c-95a1-2f4506182ff5" id="52" weight="1">
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="07b34c6a-8701-4ded-91fa-d9cb64ae6147" id="52" weight="1">
         <attvalues>
-          <attvalue for="8" value="MOTHER_CHILD" />
+          <attvalue for="12" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="842c4f15-5809-4ecf-9349-c0ef61c89def" id="53" weight="1">
+        <attvalues>
+          <attvalue for="12" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="e49c69de-749b-49a4-a76f-8748c9c05b22" id="54" weight="1">
+        <attvalues>
+          <attvalue for="12" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="3c69ab35-1d08-49f2-a0e9-9da44e4a2823" id="55" weight="1">
+        <attvalues>
+          <attvalue for="12" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="4ef90fe5-8d33-481f-88b0-46bb0b2f468b" id="56" weight="1">
+        <attvalues>
+          <attvalue for="12" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="49a437c3-bf1c-43e8-b44a-4d6e0a16b22a" id="57" weight="1">
+        <attvalues>
+          <attvalue for="12" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="f4ccd706-cfd8-4473-895d-048f605c8688" id="58" weight="1">
+        <attvalues>
+          <attvalue for="12" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="3d17f591-79d3-44a2-80a1-1d77438afffa" id="59" weight="1">
+        <attvalues>
+          <attvalue for="12" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="5285e839-505f-4da9-935f-6f6ade8a50ca" id="60" weight="1">
+        <attvalues>
+          <attvalue for="12" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="a2df66a0-b98c-41a0-8773-886a4df2c4b9" id="61" weight="1">
+        <attvalues>
+          <attvalue for="12" value="FATHER_CHILD" />
+        </attvalues>
+      </edge>
+      <edge source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="78a2288e-5e8a-451b-81d7-34734a47d5a4" id="62" weight="1">
+        <attvalues>
+          <attvalue for="12" value="FATHER_CHILD" />
         </attvalues>
       </edge>
     </edges>

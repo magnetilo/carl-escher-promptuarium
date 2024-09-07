@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:viz="http:///www.gexf.net/1.1draft/viz">
   <meta>
-    <title>graph_relabeled_weighted.gexf</title>
+    <title>graph_relabeled_weighted (2).gexf</title>
     <authors>NetworkX 3.3</authors>
   </meta>
   <graph defaultedgetype="directed">
     <attributes class="node">
+      <attribute id="person_number" title="person_number" type="string"/>
       <attribute id="family_id" title="family_id" type="string"/>
       <attribute id="father_family_id" title="father_family_id" type="string"/>
       <attribute id="family_name" title="family_name" type="string"/>
-      <attribute id="surname" title="surname" type="string"/>
+      <attribute id="given_name" title="given_name" type="string"/>
       <attribute id="birth_year" title="birth_year" type="string"/>
       <attribute id="death_year" title="death_year" type="string"/>
+      <attribute id="profession" title="profession" type="string"/>
+      <attribute id="husband_family_id" title="husband_family_id" type="string"/>
+      <attribute id="origin" title="origin" type="string"/>
       <attribute id="node_label" title="node_label" type="string"/>
       <attribute id="node_weight" title="node_weight" type="integer"/>
       <attribute id="rawSize" title="rawSize" type="double"/>
@@ -21,757 +25,1548 @@
       <attribute id="rawWeight" title="rawWeight" type="integer"/>
     </attributes>
     <nodes>
-      <node id="23fd4a98-a063-48b3-a2c6-d5eacade5af9" label="Heinrich 1613">
+      <node id="950db3ad-7797-4bdb-b0d4-740a9b200e25" label="Rudolf 1603">
         <attvalues>
-          <attvalue for="family_id" value="Billeter0001"/>
+          <attvalue for="person_number" value="1"/>
+          <attvalue for="family_id" value="Geiger0005"/>
           <attvalue for="father_family_id" value="None"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Heinrich"/>
-          <attvalue for="birth_year" value="1613"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Heinrich 1613"/>
-          <attvalue for="node_weight" value="23"/>
-          <attvalue for="rawSize" value="10"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Rudolf"/>
+          <attvalue for="birth_year" value="1603"/>
+          <attvalue for="death_year" value="1662"/>
+          <attvalue for="profession" value="Dr. Med. Prof. physic. &amp; Chorherr"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Rudolf 1603"/>
+          <attvalue for="node_weight" value="19"/>
+          <attvalue for="rawSize" value="7.925925925925926"/>
         </attvalues>
-        <viz:color r="202" g="85" b="66"/>
-        <viz:size value="10"/>
-        <viz:position x="94.71888824527397" y="63.22520086518571"/>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="7.925925925925926"/>
+        <viz:position x="46.7092884021981" y="66.77920836266344"/>
       </node>
-      <node id="0b56afab-50b9-45f6-af67-60b6bb8a555f" label="Aa Maria None">
+      <node id="3a0b894c-564e-4ff4-ba2d-bdb2971b4d51" label="Elisabetha 1628">
         <attvalues>
+          <attvalue for="person_number" value="2"/>
           <attvalue for="family_id" value="None"/>
           <attvalue for="father_family_id" value="None"/>
-          <attvalue for="family_name" value="Wirth"/>
-          <attvalue for="surname" value="Aa Maria"/>
-          <attvalue for="birth_year" value="None"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Aa Maria None"/>
-          <attvalue for="node_weight" value="23"/>
-          <attvalue for="rawSize" value="10"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="10"/>
-        <viz:position x="95.50853260412386" y="31.871688580342393"/>
-      </node>
-      <node id="98a248a1-5191-4003-87a9-da3415e9367d" label="Hs. Caspar 1613">
-        <attvalues>
-          <attvalue for="family_id" value="Billeter0002"/>
-          <attvalue for="father_family_id" value="Billeter0001"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Hs. Caspar"/>
-          <attvalue for="birth_year" value="1613"/>
-          <attvalue for="death_year" value="1654"/>
-          <attvalue for="node_label" value="Hs. Caspar 1613"/>
-          <attvalue for="node_weight" value="13"/>
-          <attvalue for="rawSize" value="6.9565217391304355"/>
-        </attvalues>
-        <viz:color r="161" g="94" b="197"/>
-        <viz:size value="6.9565217391304355"/>
-        <viz:position x="-54.72361196963794" y="62.47725926797443"/>
-      </node>
-      <node id="87797615-94e3-4b11-ab1d-5ea4c1552806" label="Susanna 1615">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0001"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Susanna"/>
-          <attvalue for="birth_year" value="1615"/>
-          <attvalue for="death_year" value="1644"/>
-          <attvalue for="node_label" value="Susanna 1615"/>
+          <attvalue for="family_name" value="Hofmeister"/>
+          <attvalue for="given_name" value="Elisabetha"/>
+          <attvalue for="birth_year" value="1628"/>
+          <attvalue for="death_year" value="1642"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Elisabetha 1628"/>
           <attvalue for="node_weight" value="0"/>
           <attvalue for="rawSize" value="3"/>
         </attvalues>
-        <viz:color r="78" g="178" b="141"/>
+        <viz:color r="93" g="187" b="83"/>
         <viz:size value="3"/>
-        <viz:position x="-3.8879423094479826" y="73.6833005706499"/>
+        <viz:position x="96.05226705383882" y="48.69133400330385"/>
       </node>
-      <node id="73af3037-6091-4b06-a1a7-0def4fc74b9f" label="Christoph None">
+      <node id="f1d09ead-37ce-4c1b-aa22-adab5a5a9d2b" label="Susanna 1640">
         <attvalues>
+          <attvalue for="person_number" value="3"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="v. Orelli"/>
+          <attvalue for="given_name" value="Susanna"/>
+          <attvalue for="birth_year" value="1640"/>
+          <attvalue for="death_year" value="1681"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Susanna 1640"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="158" g="87" b="202"/>
+        <viz:size value="3"/>
+        <viz:position x="82.22781847036636" y="34.23484533613683"/>
+      </node>
+      <node id="b256b80f-6d85-4cf5-8400-c3403389be0e" label="Christoph 1629">
+        <attvalues>
+          <attvalue for="person_number" value="4"/>
           <attvalue for="family_id" value="Geiger0006"/>
           <attvalue for="father_family_id" value="None"/>
           <attvalue for="family_name" value="Geiger"/>
-          <attvalue for="surname" value="Christoph"/>
-          <attvalue for="birth_year" value="None"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Christoph None"/>
+          <attvalue for="given_name" value="Christoph"/>
+          <attvalue for="birth_year" value="1629"/>
+          <attvalue for="death_year" value="1665"/>
+          <attvalue for="profession" value="Pfarrer"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Christoph 1629"/>
+          <attvalue for="node_weight" value="12"/>
+          <attvalue for="rawSize" value="6.111111111111111"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="6.111111111111111"/>
+        <viz:position x="25.013205649897174" y="39.55780802790751"/>
+      </node>
+      <node id="f1e4fa9a-46e6-4ca7-9d4c-966f7ee1f7a7" label="Heinrich 1630">
+        <attvalues>
+          <attvalue for="person_number" value="5"/>
+          <attvalue for="family_id" value="Geiger0007"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Heinrich"/>
+          <attvalue for="birth_year" value="1630"/>
+          <attvalue for="death_year" value="1632"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Heinrich 1630"/>
           <attvalue for="node_weight" value="0"/>
           <attvalue for="rawSize" value="3"/>
         </attvalues>
-        <viz:color r="125" g="164" b="67"/>
+        <viz:color r="205" g="74" b="75"/>
         <viz:size value="3"/>
-        <viz:position x="50.07786937074958" y="39.29098089128098"/>
+        <viz:position x="95.11610074903733" y="74.70606756483436"/>
       </node>
-      <node id="67eba151-a4bb-497c-b70c-6553db7466d3" label="Adrian 1617">
+      <node id="3666ad00-5122-4472-8b88-38042dd3d8b8" label="Christoph 1632">
         <attvalues>
-          <attvalue for="family_id" value="Billeter0003"/>
-          <attvalue for="father_family_id" value="Billeter0001"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Adrian"/>
-          <attvalue for="birth_year" value="1617"/>
+          <attvalue for="person_number" value="6"/>
+          <attvalue for="family_id" value="Geiger0008"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Christoph"/>
+          <attvalue for="birth_year" value="1632"/>
           <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Adrian 1617"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Christoph 1632"/>
           <attvalue for="node_weight" value="0"/>
           <attvalue for="rawSize" value="3"/>
         </attvalues>
-        <viz:color r="192" g="140" b="66"/>
+        <viz:color r="205" g="74" b="75"/>
         <viz:size value="3"/>
-        <viz:position x="57.442134230859864" y="71.86311783165651"/>
+        <viz:position x="27.226293550341918" y="18.247900355132685"/>
       </node>
-      <node id="50a4a66b-2f86-48d9-a862-efdd5fd62458" label="Dorothea None">
+      <node id="ff76fd9a-0dc6-4ad5-be8f-c0f1566a6004" label="Caspar 1635">
         <attvalues>
+          <attvalue for="person_number" value="7"/>
+          <attvalue for="family_id" value="Geiger0009"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Caspar"/>
+          <attvalue for="birth_year" value="1635"/>
+          <attvalue for="death_year" value="1640"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Caspar 1635"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="61.469196823908476" y="16.248066464787758"/>
+      </node>
+      <node id="ba132bea-d35f-4852-9460-740f220db31f" label="Susanna 1633">
+        <attvalues>
+          <attvalue for="person_number" value="9"/>
           <attvalue for="family_id" value="None"/>
           <attvalue for="father_family_id" value="None"/>
-          <attvalue for="family_name" value="Irminger"/>
-          <attvalue for="surname" value="Dorothea"/>
-          <attvalue for="birth_year" value="None"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Dorothea None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Susanna"/>
+          <attvalue for="birth_year" value="1633"/>
+          <attvalue for="death_year" value="1644"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Susanna 1633"/>
           <attvalue for="node_weight" value="0"/>
           <attvalue for="rawSize" value="3"/>
         </attvalues>
-        <viz:color r="78" g="178" b="141"/>
+        <viz:color r="186" g="72" b="160"/>
         <viz:size value="3"/>
-        <viz:position x="94.81295153054785" y="2.2220522603157544"/>
+        <viz:position x="0.1737917172433212" y="74.36736335671519"/>
       </node>
-      <node id="828a582c-7551-43da-9473-02681371efe5" label="T. Joh. None">
+      <node id="8042ec80-7595-4ded-81ae-010c0b18ef21" label="Magdalena None">
         <attvalues>
-          <attvalue for="family_id" value="Jakob0003"/>
-          <attvalue for="father_family_id" value="None"/>
-          <attvalue for="family_name" value="Jakob"/>
-          <attvalue for="surname" value="T. Joh."/>
-          <attvalue for="birth_year" value="None"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="T. Joh. None"/>
-          <attvalue for="node_weight" value="13"/>
-          <attvalue for="rawSize" value="6.9565217391304355"/>
-        </attvalues>
-        <viz:color r="106" g="136" b="204"/>
-        <viz:size value="6.9565217391304355"/>
-        <viz:position x="-6.535301813787921" y="105.24461957296553"/>
-      </node>
-      <node id="e26f3a51-422b-4456-bf5a-e799a9b5fabd" label="Dorothea None">
-        <attvalues>
+          <attvalue for="person_number" value="10"/>
           <attvalue for="family_id" value="None"/>
           <attvalue for="father_family_id" value="None"/>
-          <attvalue for="family_name" value="Irminger"/>
-          <attvalue for="surname" value="Dorothea"/>
+          <attvalue for="family_name" value="Bodmer"/>
+          <attvalue for="given_name" value="Magdalena"/>
           <attvalue for="birth_year" value="None"/>
           <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Dorothea None"/>
-          <attvalue for="node_weight" value="3"/>
-          <attvalue for="rawSize" value="3.9130434782608696"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Magdalena None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
         </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3.9130434782608696"/>
-        <viz:position x="64.9788725715224" y="105.86665439559306"/>
+        <viz:color r="166" g="180" b="77"/>
+        <viz:size value="3"/>
+        <viz:position x="25.81512909508532" y="70.18545045786225"/>
       </node>
-      <node id="473f1ce3-a3cc-4968-a2d1-19ed3f081048" label="Hs. Jakob 1635">
+      <node id="fd92b4cf-9b5a-4753-be2c-e20990b7a00e" label="Conrad 1635">
         <attvalues>
-          <attvalue for="family_id" value="Billeter0004"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Hs. Jakob"/>
+          <attvalue for="person_number" value="11"/>
+          <attvalue for="family_id" value="Geiger0010"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Conrad"/>
           <attvalue for="birth_year" value="1635"/>
           <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Conrad 1635"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="29.31402598947761" y="77.89448796812893"/>
+      </node>
+      <node id="cc7c714a-d0f4-4fb6-a022-4247eeeafbd6" label="Barbara 1637">
+        <attvalues>
+          <attvalue for="person_number" value="12"/>
+          <attvalue for="family_id" value="Geiger0011"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Barbara"/>
+          <attvalue for="birth_year" value="1637"/>
+          <attvalue for="death_year" value="1642"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Barbara 1637"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="15.946693936943923" y="36.54135103315035"/>
+      </node>
+      <node id="27e5cbd0-ce15-4732-9360-8f304df829f5" label="Christoph 1651">
+        <attvalues>
+          <attvalue for="person_number" value="13"/>
+          <attvalue for="family_id" value="Geiger0012"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Christoph"/>
+          <attvalue for="birth_year" value="1651"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Christoph 1651"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="82.13495794236951" y="44.1026329614175"/>
+      </node>
+      <node id="11ea2a09-43e9-4f7d-a38c-e5898a78932b" label="Hs. Caspar 1651">
+        <attvalues>
+          <attvalue for="person_number" value="14"/>
+          <attvalue for="family_id" value="Geiger0013"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Hs. Caspar"/>
+          <attvalue for="birth_year" value="1651"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Hs. Caspar 1651"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="92.91394126933837" y="29.264543569579192"/>
+      </node>
+      <node id="e4b3632b-9f77-43f5-a752-84de1cc1e5c4" label="Heinrich 1641">
+        <attvalues>
+          <attvalue for="person_number" value="15"/>
+          <attvalue for="family_id" value="Geiger0014"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Heinrich"/>
+          <attvalue for="birth_year" value="1641"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Heinrich 1641"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="56.49047157113558" y="52.27643696795808"/>
+      </node>
+      <node id="39c51107-2a1d-4fa0-95fa-eecaf3b5d37d" label="Anna 1645">
+        <attvalues>
+          <attvalue for="person_number" value="16"/>
+          <attvalue for="family_id" value="Geiger0015"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Anna"/>
+          <attvalue for="birth_year" value="1645"/>
+          <attvalue for="death_year" value="1694"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Anna 1645"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="51.57023152776321" y="77.63441537546132"/>
+      </node>
+      <node id="81781954-094a-498b-b763-0fc1f5df093a" label="Georg 1648">
+        <attvalues>
+          <attvalue for="person_number" value="17"/>
+          <attvalue for="family_id" value="Geiger0016"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Georg"/>
+          <attvalue for="birth_year" value="1648"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Georg 1648"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="64.64327460995494" y="24.216835118647275"/>
+      </node>
+      <node id="09edca95-b025-45b3-b924-adfcfe661d3f" label="Rudolf 1653">
+        <attvalues>
+          <attvalue for="person_number" value="18"/>
+          <attvalue for="family_id" value="Geiger0017"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Rudolf"/>
+          <attvalue for="birth_year" value="1653"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Rudolf 1653"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="77.77677027509604" y="54.59734728244827"/>
+      </node>
+      <node id="b3e5cfdb-357e-469d-898a-0a938e3faec7" label="A. Maria 1644">
+        <attvalues>
+          <attvalue for="person_number" value="19"/>
+          <attvalue for="family_id" value="Geiger0018"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="A. Maria"/>
+          <attvalue for="birth_year" value="1644"/>
+          <attvalue for="death_year" value="1729"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="Geiger0014"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="A. Maria 1644"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="98.02033557527882" y="55.41905150551318"/>
+      </node>
+      <node id="98f91d12-3834-4876-b045-c95be1883f4e" label="Caspar None">
+        <attvalues>
+          <attvalue for="person_number" value="20"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Heiz"/>
+          <attvalue for="given_name" value="Caspar"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="1724"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="Geiger0013"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Caspar None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="100" g="105" b="195"/>
+        <viz:size value="3"/>
+        <viz:position x="17.478279562668032" y="32.6335662472204"/>
+      </node>
+      <node id="a9d4d388-72f7-4d76-b30c-d055a3f23452" label="Heinrich None">
+        <attvalues>
+          <attvalue for="person_number" value="21"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Widerkehr"/>
+          <attvalue for="given_name" value="Heinrich"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="Geiger0014"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Heinrich None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="207" g="69" b="123"/>
+        <viz:size value="3"/>
+        <viz:position x="93.59931427337355" y="32.55766552450095"/>
+      </node>
+      <node id="12b7a38a-4f34-42c6-aa6c-fcf014276f05" label="Conrad 1640">
+        <attvalues>
+          <attvalue for="person_number" value="22"/>
+          <attvalue for="family_id" value="Geiger0019"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Conrad"/>
+          <attvalue for="birth_year" value="1640"/>
+          <attvalue for="death_year" value="1662"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Conrad 1640"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="45.69576719053507" y="38.23595374152762"/>
+      </node>
+      <node id="edeb17e1-ca57-4586-aca5-f1f48e1e3075" label="Margaretha 1644">
+        <attvalues>
+          <attvalue for="person_number" value="23"/>
+          <attvalue for="family_id" value="Geiger0020"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Margaretha"/>
+          <attvalue for="birth_year" value="1644"/>
+          <attvalue for="death_year" value="1672"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Margaretha 1644"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="83.5548252331208" y="20.843786063841364"/>
+      </node>
+      <node id="c7d7ada9-77fb-4bf1-832c-1c258b375b9c" label="Jakob None">
+        <attvalues>
+          <attvalue for="person_number" value="24"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Schaufelberger"/>
+          <attvalue for="given_name" value="Jakob"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Jakob None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="211" g="162" b="72"/>
+        <viz:size value="3"/>
+        <viz:position x="0.2620801362148928" y="53.49918291954996"/>
+      </node>
+      <node id="136be896-fcda-47bd-9bef-c97b14b004f3" label="Hs. Friedrich 1652">
+        <attvalues>
+          <attvalue for="person_number" value="25"/>
+          <attvalue for="family_id" value="Geiger0021"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Geiger"/>
+          <attvalue for="given_name" value="Hs. Friedrich"/>
+          <attvalue for="birth_year" value="1652"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Hs. Friedrich 1652"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="205" g="74" b="75"/>
+        <viz:size value="3"/>
+        <viz:position x="51.8613344344691" y="96.88513223959822"/>
+      </node>
+      <node id="07b34c6a-8701-4ded-91fa-d9cb64ae6147" label="Caspar 1641">
+        <attvalues>
+          <attvalue for="person_number" value="1"/>
+          <attvalue for="family_id" value="Billeter0005"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Caspar"/>
+          <attvalue for="birth_year" value="1641"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="Schloßer"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Caspar 1641"/>
+          <attvalue for="node_weight" value="9"/>
+          <attvalue for="rawSize" value="5.333333333333333"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="5.333333333333333"/>
+        <viz:position x="14.125983087591788" y="87.9866509264909"/>
+      </node>
+      <node id="8123a581-dce2-424d-9e80-a0688ca031f5" label="Anna None">
+        <attvalues>
+          <attvalue for="person_number" value="2"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Ulrich"/>
+          <attvalue for="given_name" value="Anna"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Anna None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="85" g="121" b="53"/>
+        <viz:size value="3"/>
+        <viz:position x="3.8802361570374977" y="28.130395749008684"/>
+      </node>
+      <node id="842c4f15-5809-4ecf-9349-c0ef61c89def" label="Heinrich 1639">
+        <attvalues>
+          <attvalue for="person_number" value="3"/>
+          <attvalue for="family_id" value="Billeter0006"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Heinrich"/>
+          <attvalue for="birth_year" value="1639"/>
+          <attvalue for="death_year" value="1700"/>
+          <attvalue for="profession" value="Pfister"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Heinrich 1639"/>
+          <attvalue for="node_weight" value="7"/>
+          <attvalue for="rawSize" value="4.814814814814815"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="4.814814814814815"/>
+        <viz:position x="75.12188561426798" y="40.03834183402628"/>
+      </node>
+      <node id="4fd2a424-3fdf-48ba-a728-c9dcf6f20c07" label="Elisabetha None">
+        <attvalues>
+          <attvalue for="person_number" value="4"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Räuchli"/>
+          <attvalue for="given_name" value="Elisabetha"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Elisabetha None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="209" g="145" b="211"/>
+        <viz:size value="3"/>
+        <viz:position x="67.51531376355275" y="16.57452437929383"/>
+      </node>
+      <node id="df4ada6c-e340-4dec-8a46-c9f2596d653a" label="Anna None">
+        <attvalues>
+          <attvalue for="person_number" value="5"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Vogel"/>
+          <attvalue for="given_name" value="Anna"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="1719"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Anna None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="82" g="183" b="155"/>
+        <viz:size value="3"/>
+        <viz:position x="67.15749713266972" y="94.11688379225436"/>
+      </node>
+      <node id="e49c69de-749b-49a4-a76f-8748c9c05b22" label="Elisabetha 1670">
+        <attvalues>
+          <attvalue for="person_number" value="10"/>
+          <attvalue for="family_id" value="Billeter0007"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Elisabetha"/>
+          <attvalue for="birth_year" value="1670"/>
+          <attvalue for="death_year" value="1724"/>
+          <attvalue for="profession" value="Pfister"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Elisabetha 1670"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="20.128076179237443" y="61.66304790755051"/>
+      </node>
+      <node id="3c69ab35-1d08-49f2-a0e9-9da44e4a2823" label="Anna 1672">
+        <attvalues>
+          <attvalue for="person_number" value="11"/>
+          <attvalue for="family_id" value="Billeter0008"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Anna"/>
+          <attvalue for="birth_year" value="1672"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Anna 1672"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="14.813000509424823" y="21.52853678781712"/>
+      </node>
+      <node id="4ef90fe5-8d33-481f-88b0-46bb0b2f468b" label="A. Magdalena 1673">
+        <attvalues>
+          <attvalue for="person_number" value="12"/>
+          <attvalue for="family_id" value="Billeter0009"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="A. Magdalena"/>
+          <attvalue for="birth_year" value="1673"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="A. Magdalena 1673"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="23.11091618009382" y="82.8349452574421"/>
+      </node>
+      <node id="49a437c3-bf1c-43e8-b44a-4d6e0a16b22a" label="Hs. Conrad 1674">
+        <attvalues>
+          <attvalue for="person_number" value="13"/>
+          <attvalue for="family_id" value="Billeter0010"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Hs. Conrad"/>
+          <attvalue for="birth_year" value="1674"/>
+          <attvalue for="death_year" value="1676"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Hs. Conrad 1674"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="86.91729538352612" y="51.319283709055476"/>
+      </node>
+      <node id="f4ccd706-cfd8-4473-895d-048f605c8688" label="Magdalena 1675">
+        <attvalues>
+          <attvalue for="person_number" value="10"/>
+          <attvalue for="family_id" value="Billeter0011"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Magdalena"/>
+          <attvalue for="birth_year" value="1675"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Magdalena 1675"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="82.8796450890271" y="42.542710697395506"/>
+      </node>
+      <node id="3d17f591-79d3-44a2-80a1-1d77438afffa" label="Cleophea 1677">
+        <attvalues>
+          <attvalue for="person_number" value="11"/>
+          <attvalue for="family_id" value="Billeter0012"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Cleophea"/>
+          <attvalue for="birth_year" value="1677"/>
+          <attvalue for="death_year" value="1717"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Cleophea 1677"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="55.68785920241868" y="83.78814701432403"/>
+      </node>
+      <node id="5285e839-505f-4da9-935f-6f6ade8a50ca" label="Hs. Heinrich 1679">
+        <attvalues>
+          <attvalue for="person_number" value="12"/>
+          <attvalue for="family_id" value="Billeter0013"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Hs. Heinrich"/>
+          <attvalue for="birth_year" value="1679"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Hs. Heinrich 1679"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="22.51266694242171" y="63.288358498971185"/>
+      </node>
+      <node id="a2df66a0-b98c-41a0-8773-886a4df2c4b9" label="Wilhelm 1681">
+        <attvalues>
+          <attvalue for="person_number" value="13"/>
+          <attvalue for="family_id" value="Billeter0014"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Wilhelm"/>
+          <attvalue for="birth_year" value="1681"/>
+          <attvalue for="death_year" value="1713"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Wilhelm 1681"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="4.960758569011525" y="54.819454386882185"/>
+      </node>
+      <node id="78a2288e-5e8a-451b-81d7-34734a47d5a4" label="Dorothea 1641">
+        <attvalues>
+          <attvalue for="person_number" value="14"/>
+          <attvalue for="family_id" value="Billeter0015"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Dorothea"/>
+          <attvalue for="birth_year" value="1641"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="Posamenter"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Dorothea 1641"/>
+          <attvalue for="node_weight" value="7"/>
+          <attvalue for="rawSize" value="4.814814814814815"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="4.814814814814815"/>
+        <viz:position x="90.21363733759809" y="93.9449620833122"/>
+      </node>
+      <node id="26b8f2b1-5e58-4aca-b448-e28061ad16e7" label="Elisabetha None">
+        <attvalues>
+          <attvalue for="person_number" value="15"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Stocker"/>
+          <attvalue for="given_name" value="Elisabetha"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Elisabetha None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="216" g="103" b="48"/>
+        <viz:size value="3"/>
+        <viz:position x="99.25553689640574" y="60.55030326349904"/>
+      </node>
+      <node id="d6771843-6a58-4f5b-9591-38c6269280b8" label="Rudolf 1672">
+        <attvalues>
+          <attvalue for="person_number" value="16"/>
+          <attvalue for="family_id" value="Billeter0016"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Rudolf"/>
+          <attvalue for="birth_year" value="1672"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Rudolf 1672"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="44.873989744980115" y="73.47957296174687"/>
+      </node>
+      <node id="bcd8d2f6-000c-4618-aa0f-46714a059cee" label="Ulrich 1674">
+        <attvalues>
+          <attvalue for="person_number" value="17"/>
+          <attvalue for="family_id" value="Billeter0017"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Ulrich"/>
+          <attvalue for="birth_year" value="1674"/>
+          <attvalue for="death_year" value="1676"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Ulrich 1674"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="28.095072931143328" y="36.25847879554207"/>
+      </node>
+      <node id="34a5dbe6-c362-40c4-8153-76abcaa0842b" label="Barbara 1676">
+        <attvalues>
+          <attvalue for="person_number" value="18"/>
+          <attvalue for="family_id" value="Billeter0018"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Barbara"/>
+          <attvalue for="birth_year" value="1676"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Barbara 1676"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="12.54780567858349" y="11.697344539568322"/>
+      </node>
+      <node id="580197a4-401a-44ee-a0dd-8d6b6d22aea6" label="Caspar 1678">
+        <attvalues>
+          <attvalue for="person_number" value="19"/>
+          <attvalue for="family_id" value="Billeter0019"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Caspar"/>
+          <attvalue for="birth_year" value="1678"/>
+          <attvalue for="death_year" value="1747"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Caspar 1678"/>
+          <attvalue for="node_weight" value="2"/>
+          <attvalue for="rawSize" value="3.5185185185185186"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3.5185185185185186"/>
+        <viz:position x="4.475333849090757" y="60.65624420346789"/>
+      </node>
+      <node id="c9d4a8fb-f1f5-4931-b0b5-9d6e7c4d54d1" label="Regula None">
+        <attvalues>
+          <attvalue for="person_number" value="20"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Hofmeister"/>
+          <attvalue for="given_name" value="Regula"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Regula None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="93" g="187" b="83"/>
+        <viz:size value="3"/>
+        <viz:position x="71.36818349841505" y="57.240840768869084"/>
+      </node>
+      <node id="5cf527ff-235a-4739-b5b6-a9bb4b8aac10" label="Maria 1714">
+        <attvalues>
+          <attvalue for="person_number" value="21"/>
+          <attvalue for="family_id" value="Billeter0020"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Maria"/>
+          <attvalue for="birth_year" value="1714"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Maria 1714"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="66.16026821508858" y="60.64967664803112"/>
+      </node>
+      <node id="cffaf944-166a-47fb-848d-0aea5aab386a" label="Dorothea 1720">
+        <attvalues>
+          <attvalue for="person_number" value="22"/>
+          <attvalue for="family_id" value="Billeter0021"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Dorothea"/>
+          <attvalue for="birth_year" value="1720"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Dorothea 1720"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="48.12422139498116" y="24.97346250438872"/>
+      </node>
+      <node id="36b7e090-2519-425b-876b-3a1fd209ca66" label="Joh. Christoph 1705">
+        <attvalues>
+          <attvalue for="person_number" value="23"/>
+          <attvalue for="family_id" value="Billeter0022"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Joh. Christoph"/>
+          <attvalue for="birth_year" value="1705"/>
+          <attvalue for="death_year" value="1773"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Joh. Christoph 1705"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="12.304596399913216" y="70.24751395294003"/>
+      </node>
+      <node id="1c195cfa-2c03-49b0-82e8-5471b0e351fe" label="Regula None">
+        <attvalues>
+          <attvalue for="person_number" value="24"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Hirzel"/>
+          <attvalue for="given_name" value="Regula"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Regula None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="178" g="100" b="125"/>
+        <viz:size value="3"/>
+        <viz:position x="4.8438266292099685" y="51.598802006003396"/>
+      </node>
+      <node id="6fc60d32-ef4b-4dcc-976d-5653de627359" label="Heinrich None">
+        <attvalues>
+          <attvalue for="person_number" value="1"/>
+          <attvalue for="family_id" value="Billeter0001"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Heinrich"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="Pfister"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="Mänedorf"/>
+          <attvalue for="node_label" value="Heinrich None"/>
+          <attvalue for="node_weight" value="27"/>
+          <attvalue for="rawSize" value="10"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="10"/>
+        <viz:position x="92.33892429961222" y="18.620708951407174"/>
+      </node>
+      <node id="3b8dc03b-1898-4126-9a09-db2bb66dea2a" label="Anna Maria None">
+        <attvalues>
+          <attvalue for="person_number" value="2"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Wirth"/>
+          <attvalue for="given_name" value="Anna Maria"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Anna Maria None"/>
+          <attvalue for="node_weight" value="27"/>
+          <attvalue for="rawSize" value="10"/>
+        </attvalues>
+        <viz:color r="98" g="153" b="209"/>
+        <viz:size value="10"/>
+        <viz:position x="73.36214147626758" y="68.50410975662844"/>
+      </node>
+      <node id="c7ee8913-ce9b-405d-8e82-dbfad77453fa" label="Hans Caspar 1613">
+        <attvalues>
+          <attvalue for="person_number" value="3"/>
+          <attvalue for="family_id" value="Billeter0002"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Hans Caspar"/>
+          <attvalue for="birth_year" value="1613"/>
+          <attvalue for="death_year" value="1654"/>
+          <attvalue for="profession" value="Pfarrer"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Hans Caspar 1613"/>
+          <attvalue for="node_weight" value="25"/>
+          <attvalue for="rawSize" value="9.481481481481481"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="9.481481481481481"/>
+        <viz:position x="83.8838786902552" y="61.196016021437295"/>
+      </node>
+      <node id="56204e37-10fa-4267-9ef4-a1575825ec46" label="Susanna None">
+        <attvalues>
+          <attvalue for="person_number" value="4"/>
+          <attvalue for="family_id" value="None"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Susanna"/>
+          <attvalue for="birth_year" value="None"/>
+          <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Susanna None"/>
+          <attvalue for="node_weight" value="0"/>
+          <attvalue for="rawSize" value="3"/>
+        </attvalues>
+        <viz:color r="186" g="72" b="160"/>
+        <viz:size value="3"/>
+        <viz:position x="76.43371269749966" y="19.509404103783147"/>
+      </node>
+      <node id="98c3c827-547e-4252-8436-8bb9dea79874" label="Hs. Jakob 1635">
+        <attvalues>
+          <attvalue for="person_number" value="5"/>
+          <attvalue for="family_id" value="Billeter0003"/>
+          <attvalue for="father_family_id" value="None"/>
+          <attvalue for="family_name" value="Billeter"/>
+          <attvalue for="given_name" value="Hs. Jakob"/>
+          <attvalue for="birth_year" value="1635"/>
+          <attvalue for="death_year" value="1692"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
           <attvalue for="node_label" value="Hs. Jakob 1635"/>
           <attvalue for="node_weight" value="0"/>
           <attvalue for="rawSize" value="3"/>
         </attvalues>
-        <viz:color r="197" g="93" b="139"/>
+        <viz:color r="186" g="72" b="160"/>
         <viz:size value="3"/>
-        <viz:position x="40.579418698961646" y="79.751509257043"/>
+        <viz:position x="44.807475848808956" y="46.03277699143435"/>
       </node>
-      <node id="4662b808-0594-4e85-9d7a-fad1cb993ab1" label="Elisabetha 1636">
+      <node id="df523abf-eafe-41cc-bbb6-6f1f5b3cf793" label="Dorothea None">
         <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Elisabetha"/>
-          <attvalue for="birth_year" value="1636"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Elisabetha 1636"/>
-          <attvalue for="node_weight" value="0"/>
-          <attvalue for="rawSize" value="3"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3"/>
-        <viz:position x="12.392936346299997" y="93.49280004440983"/>
-      </node>
-      <node id="3075f7ec-3811-4370-a87a-6852aba0deaa" label="Emerentiana 1638">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Emerentiana"/>
-          <attvalue for="birth_year" value="1638"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Emerentiana 1638"/>
-          <attvalue for="node_weight" value="0"/>
-          <attvalue for="rawSize" value="3"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3"/>
-        <viz:position x="82.10563853841167" y="77.49538175745214"/>
-      </node>
-      <node id="469a05e1-5f98-42f8-ad0a-0fa101da19e8" label="Dorothea None">
-        <attvalues>
+          <attvalue for="person_number" value="6"/>
           <attvalue for="family_id" value="None"/>
           <attvalue for="father_family_id" value="None"/>
           <attvalue for="family_name" value="Irminger"/>
-          <attvalue for="surname" value="Dorothea"/>
+          <attvalue for="given_name" value="Dorothea"/>
           <attvalue for="birth_year" value="None"/>
           <attvalue for="death_year" value="None"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="Billeter0005"/>
+          <attvalue for="origin" value="None"/>
           <attvalue for="node_label" value="Dorothea None"/>
-          <attvalue for="node_weight" value="3"/>
-          <attvalue for="rawSize" value="3.9130434782608696"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3.9130434782608696"/>
-        <viz:position x="34.58983064035639" y="98.298721261897"/>
-      </node>
-      <node id="ad5cb31b-e28e-4e26-90aa-1d588b8a9e14" label="Elisabetha 1636">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Elisabetha"/>
-          <attvalue for="birth_year" value="1636"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Elisabetha 1636"/>
           <attvalue for="node_weight" value="0"/>
           <attvalue for="rawSize" value="3"/>
         </attvalues>
-        <viz:color r="78" g="178" b="141"/>
+        <viz:color r="165" g="109" b="65"/>
         <viz:size value="3"/>
-        <viz:position x="25.79270457755898" y="16.769141857914537"/>
+        <viz:position x="81.27816726909842" y="62.4814895087094"/>
       </node>
-      <node id="ffaece2e-ece3-4870-8e0f-c78e64bb41c4" label="Emerentiana 1638">
+      <node id="7cd98ee4-5e14-4274-a6de-dd7317c13bf4" label="Heinrich 1639">
         <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Emerentiana"/>
-          <attvalue for="birth_year" value="1638"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Emerentiana 1638"/>
-          <attvalue for="node_weight" value="0"/>
-          <attvalue for="rawSize" value="3"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3"/>
-        <viz:position x="7.838719942680239" y="27.48702134140779"/>
-      </node>
-      <node id="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" label="Dorothea None">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
+          <attvalue for="person_number" value="7"/>
+          <attvalue for="family_id" value="Billeter0004"/>
           <attvalue for="father_family_id" value="None"/>
-          <attvalue for="family_name" value="Irminger"/>
-          <attvalue for="surname" value="Dorothea"/>
-          <attvalue for="birth_year" value="None"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Dorothea None"/>
-          <attvalue for="node_weight" value="3"/>
-          <attvalue for="rawSize" value="3.9130434782608696"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3.9130434782608696"/>
-        <viz:position x="45.04259978493612" y="54.10300193217476"/>
-      </node>
-      <node id="cf095ee0-4adf-482f-bff9-20b26b1bc018" label="Elisabetha 1636">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
           <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Elisabetha"/>
-          <attvalue for="birth_year" value="1636"/>
+          <attvalue for="given_name" value="Heinrich"/>
+          <attvalue for="birth_year" value="1639"/>
           <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Elisabetha 1636"/>
+          <attvalue for="profession" value="None"/>
+          <attvalue for="husband_family_id" value="None"/>
+          <attvalue for="origin" value="None"/>
+          <attvalue for="node_label" value="Heinrich 1639"/>
           <attvalue for="node_weight" value="0"/>
           <attvalue for="rawSize" value="3"/>
         </attvalues>
-        <viz:color r="78" g="178" b="141"/>
+        <viz:color r="186" g="72" b="160"/>
         <viz:size value="3"/>
-        <viz:position x="-15.162252308423287" y="93.26355503912633"/>
-      </node>
-      <node id="b517abf1-1659-4349-a14d-d8cde872453f" label="Emerentiana 1638">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Emerentiana"/>
-          <attvalue for="birth_year" value="1638"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Emerentiana 1638"/>
-          <attvalue for="node_weight" value="0"/>
-          <attvalue for="rawSize" value="3"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3"/>
-        <viz:position x="15.983924606772915" y="0.019011559436243886"/>
-      </node>
-      <node id="4716ee49-633e-46c5-9e00-944a57543c55" label="Dorothea None">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="None"/>
-          <attvalue for="family_name" value="Irminger"/>
-          <attvalue for="surname" value="Dorothea"/>
-          <attvalue for="birth_year" value="None"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Dorothea None"/>
-          <attvalue for="node_weight" value="3"/>
-          <attvalue for="rawSize" value="3.9130434782608696"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3.9130434782608696"/>
-        <viz:position x="-46.66227044405646" y="1.0927446861107128"/>
-      </node>
-      <node id="2b5668cb-83e8-4fa7-a207-6431df5bf0b8" label="Elisabetha 1636">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Elisabetha"/>
-          <attvalue for="birth_year" value="1636"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Elisabetha 1636"/>
-          <attvalue for="node_weight" value="0"/>
-          <attvalue for="rawSize" value="3"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3"/>
-        <viz:position x="39.05932078608336" y="2.874271727402866"/>
-      </node>
-      <node id="99cff6fb-8b32-44f7-bb2b-0500c56b33f1" label="Emerentiana 1638">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Emerentiana"/>
-          <attvalue for="birth_year" value="1638"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Emerentiana 1638"/>
-          <attvalue for="node_weight" value="0"/>
-          <attvalue for="rawSize" value="3"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3"/>
-        <viz:position x="58.57505730051138" y="8.956748446096686"/>
-      </node>
-      <node id="1a788c02-ea6e-466c-ae87-ce953203876f" label="Dorothea None">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="None"/>
-          <attvalue for="family_name" value="Irminger"/>
-          <attvalue for="surname" value="Dorothea"/>
-          <attvalue for="birth_year" value="None"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Dorothea None"/>
-          <attvalue for="node_weight" value="3"/>
-          <attvalue for="rawSize" value="3.9130434782608696"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3.9130434782608696"/>
-        <viz:position x="16.558905387148705" y="71.75689391941162"/>
-      </node>
-      <node id="7e23d677-980d-4678-817c-87c3a63a66b8" label="Elisabetha 1636">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Elisabetha"/>
-          <attvalue for="birth_year" value="1636"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Elisabetha 1636"/>
-          <attvalue for="node_weight" value="0"/>
-          <attvalue for="rawSize" value="3"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3"/>
-        <viz:position x="58.48134795097235" y="55.98080680812181"/>
-      </node>
-      <node id="9268f8a6-81e5-42ce-94ff-d8ef4da85352" label="Emerentiana 1638">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Emerentiana"/>
-          <attvalue for="birth_year" value="1638"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Emerentiana 1638"/>
-          <attvalue for="node_weight" value="0"/>
-          <attvalue for="rawSize" value="3"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3"/>
-        <viz:position x="60.79766318379012" y="89.17916802580137"/>
-      </node>
-      <node id="a79cf677-6adc-4829-a972-283fd4af63f6" label="Dorothea None">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="None"/>
-          <attvalue for="family_name" value="Irminger"/>
-          <attvalue for="surname" value="Dorothea"/>
-          <attvalue for="birth_year" value="None"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Dorothea None"/>
-          <attvalue for="node_weight" value="3"/>
-          <attvalue for="rawSize" value="3.9130434782608696"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3.9130434782608696"/>
-        <viz:position x="21.794036409643326" y="37.073368459559134"/>
-      </node>
-      <node id="019b5320-ed5d-40ca-a06c-d55e14fdd867" label="Elisabetha 1636">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Elisabetha"/>
-          <attvalue for="birth_year" value="1636"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Elisabetha 1636"/>
-          <attvalue for="node_weight" value="0"/>
-          <attvalue for="rawSize" value="3"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3"/>
-        <viz:position x="24.710504262638455" y="1.969413674804077"/>
-      </node>
-      <node id="8da5a576-f7c9-499c-95a1-2f4506182ff5" label="Emerentiana 1638">
-        <attvalues>
-          <attvalue for="family_id" value="None"/>
-          <attvalue for="father_family_id" value="Billeter0003"/>
-          <attvalue for="family_name" value="Billeter"/>
-          <attvalue for="surname" value="Emerentiana"/>
-          <attvalue for="birth_year" value="1638"/>
-          <attvalue for="death_year" value="None"/>
-          <attvalue for="node_label" value="Emerentiana 1638"/>
-          <attvalue for="node_weight" value="0"/>
-          <attvalue for="rawSize" value="3"/>
-        </attvalues>
-        <viz:color r="78" g="178" b="141"/>
-        <viz:size value="3"/>
-        <viz:position x="26.24041407327531" y="44.07400148669702"/>
+        <viz:position x="12.168101257691898" y="91.98112989199842"/>
       </node>
     </nodes>
     <edges>
-      <edge id="0" source="23fd4a98-a063-48b3-a2c6-d5eacade5af9" target="0b56afab-50b9-45f6-af67-60b6bb8a555f" weight="0" label="HUSBAND_WIFE">
+      <edge id="0" source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="3a0b894c-564e-4ff4-ba2d-bdb2971b4d51" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="1" source="23fd4a98-a063-48b3-a2c6-d5eacade5af9" target="98a248a1-5191-4003-87a9-da3415e9367d" weight="0" label="FATHER_CHILD">
-        <attvalues>
-          <attvalue for="relation_type" value="FATHER_CHILD"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="2" source="23fd4a98-a063-48b3-a2c6-d5eacade5af9" target="87797615-94e3-4b11-ab1d-5ea4c1552806" weight="0" label="FATHER_CHILD">
-        <attvalues>
-          <attvalue for="relation_type" value="FATHER_CHILD"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="3" source="23fd4a98-a063-48b3-a2c6-d5eacade5af9" target="67eba151-a4bb-497c-b70c-6553db7466d3" weight="0" label="FATHER_CHILD">
-        <attvalues>
-          <attvalue for="relation_type" value="FATHER_CHILD"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="4" source="0b56afab-50b9-45f6-af67-60b6bb8a555f" target="98a248a1-5191-4003-87a9-da3415e9367d" weight="0" label="MOTHER_CHILD">
-        <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="5" source="0b56afab-50b9-45f6-af67-60b6bb8a555f" target="87797615-94e3-4b11-ab1d-5ea4c1552806" weight="0" label="MOTHER_CHILD">
-        <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="6" source="0b56afab-50b9-45f6-af67-60b6bb8a555f" target="67eba151-a4bb-497c-b70c-6553db7466d3" weight="0" label="MOTHER_CHILD">
-        <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="7" source="98a248a1-5191-4003-87a9-da3415e9367d" target="50a4a66b-2f86-48d9-a862-efdd5fd62458" weight="0" label="HUSBAND_WIFE">
+      <edge id="1" source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="f1d09ead-37ce-4c1b-aa22-adab5a5a9d2b" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="8" source="98a248a1-5191-4003-87a9-da3415e9367d" target="e26f3a51-422b-4456-bf5a-e799a9b5fabd" weight="0" label="HUSBAND_WIFE">
-        <attvalues>
-          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="9" source="98a248a1-5191-4003-87a9-da3415e9367d" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" weight="0" label="FATHER_CHILD">
+      <edge id="2" source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="b256b80f-6d85-4cf5-8400-c3403389be0e" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="10" source="98a248a1-5191-4003-87a9-da3415e9367d" target="4662b808-0594-4e85-9d7a-fad1cb993ab1" weight="0" label="FATHER_CHILD">
+      <edge id="3" source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="f1e4fa9a-46e6-4ca7-9d4c-966f7ee1f7a7" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="11" source="98a248a1-5191-4003-87a9-da3415e9367d" target="3075f7ec-3811-4370-a87a-6852aba0deaa" weight="0" label="FATHER_CHILD">
+      <edge id="4" source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="3666ad00-5122-4472-8b88-38042dd3d8b8" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="12" source="98a248a1-5191-4003-87a9-da3415e9367d" target="469a05e1-5f98-42f8-ad0a-0fa101da19e8" weight="0" label="HUSBAND_WIFE">
-        <attvalues>
-          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="13" source="98a248a1-5191-4003-87a9-da3415e9367d" target="ad5cb31b-e28e-4e26-90aa-1d588b8a9e14" weight="0" label="FATHER_CHILD">
+      <edge id="5" source="950db3ad-7797-4bdb-b0d4-740a9b200e25" target="ff76fd9a-0dc6-4ad5-be8f-c0f1566a6004" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="14" source="98a248a1-5191-4003-87a9-da3415e9367d" target="ffaece2e-ece3-4870-8e0f-c78e64bb41c4" weight="0" label="FATHER_CHILD">
+      <edge id="6" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="ba132bea-d35f-4852-9460-740f220db31f" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="157" g="110" b="189"/>
+      </edge>
+      <edge id="7" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="8042ec80-7595-4ded-81ae-010c0b18ef21" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="157" g="110" b="189"/>
+      </edge>
+      <edge id="8" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="fd92b4cf-9b5a-4753-be2c-e20990b7a00e" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="15" source="98a248a1-5191-4003-87a9-da3415e9367d" target="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" weight="0" label="HUSBAND_WIFE">
-        <attvalues>
-          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="16" source="98a248a1-5191-4003-87a9-da3415e9367d" target="cf095ee0-4adf-482f-bff9-20b26b1bc018" weight="0" label="FATHER_CHILD">
+      <edge id="9" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="cc7c714a-d0f4-4fb6-a022-4247eeeafbd6" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="17" source="98a248a1-5191-4003-87a9-da3415e9367d" target="b517abf1-1659-4349-a14d-d8cde872453f" weight="0" label="FATHER_CHILD">
+      <edge id="10" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="27e5cbd0-ce15-4732-9360-8f304df829f5" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="18" source="98a248a1-5191-4003-87a9-da3415e9367d" target="4716ee49-633e-46c5-9e00-944a57543c55" weight="0" label="HUSBAND_WIFE">
-        <attvalues>
-          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="19" source="98a248a1-5191-4003-87a9-da3415e9367d" target="2b5668cb-83e8-4fa7-a207-6431df5bf0b8" weight="0" label="FATHER_CHILD">
+      <edge id="11" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="11ea2a09-43e9-4f7d-a38c-e5898a78932b" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="20" source="98a248a1-5191-4003-87a9-da3415e9367d" target="99cff6fb-8b32-44f7-bb2b-0500c56b33f1" weight="0" label="FATHER_CHILD">
+      <edge id="12" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="e4b3632b-9f77-43f5-a752-84de1cc1e5c4" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="21" source="98a248a1-5191-4003-87a9-da3415e9367d" target="1a788c02-ea6e-466c-ae87-ce953203876f" weight="0" label="HUSBAND_WIFE">
-        <attvalues>
-          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="22" source="98a248a1-5191-4003-87a9-da3415e9367d" target="7e23d677-980d-4678-817c-87c3a63a66b8" weight="0" label="FATHER_CHILD">
+      <edge id="13" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="39c51107-2a1d-4fa0-95fa-eecaf3b5d37d" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="23" source="98a248a1-5191-4003-87a9-da3415e9367d" target="9268f8a6-81e5-42ce-94ff-d8ef4da85352" weight="0" label="FATHER_CHILD">
+      <edge id="14" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="81781954-094a-498b-b763-0fc1f5df093a" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="24" source="98a248a1-5191-4003-87a9-da3415e9367d" target="a79cf677-6adc-4829-a972-283fd4af63f6" weight="0" label="HUSBAND_WIFE">
-        <attvalues>
-          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
-      </edge>
-      <edge id="25" source="98a248a1-5191-4003-87a9-da3415e9367d" target="019b5320-ed5d-40ca-a06c-d55e14fdd867" weight="0" label="FATHER_CHILD">
+      <edge id="15" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="09edca95-b025-45b3-b924-adfcfe661d3f" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="26" source="98a248a1-5191-4003-87a9-da3415e9367d" target="8da5a576-f7c9-499c-95a1-2f4506182ff5" weight="0" label="FATHER_CHILD">
+      <edge id="16" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="b3e5cfdb-357e-469d-898a-0a938e3faec7" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="27" source="73af3037-6091-4b06-a1a7-0def4fc74b9f" target="87797615-94e3-4b11-ab1d-5ea4c1552806" weight="0" label="HUSBAND_WIFE">
+      <edge id="17" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="12b7a38a-4f34-42c6-aa6c-fcf014276f05" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="18" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="edeb17e1-ca57-4586-aca5-f1f48e1e3075" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="19" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="c7d7ada9-77fb-4bf1-832c-1c258b375b9c" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="28" source="828a582c-7551-43da-9473-02681371efe5" target="50a4a66b-2f86-48d9-a862-efdd5fd62458" weight="0" label="HUSBAND_WIFE">
+      <edge id="20" source="b256b80f-6d85-4cf5-8400-c3403389be0e" target="136be896-fcda-47bd-9bef-c97b14b004f3" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="21" source="98f91d12-3834-4876-b045-c95be1883f4e" target="b3e5cfdb-357e-469d-898a-0a938e3faec7" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="29" source="828a582c-7551-43da-9473-02681371efe5" target="e26f3a51-422b-4456-bf5a-e799a9b5fabd" weight="0" label="HUSBAND_WIFE">
+      <edge id="22" source="a9d4d388-72f7-4d76-b30c-d055a3f23452" target="b3e5cfdb-357e-469d-898a-0a938e3faec7" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="30" source="828a582c-7551-43da-9473-02681371efe5" target="469a05e1-5f98-42f8-ad0a-0fa101da19e8" weight="0" label="HUSBAND_WIFE">
+      <edge id="23" source="07b34c6a-8701-4ded-91fa-d9cb64ae6147" target="8123a581-dce2-424d-9e80-a0688ca031f5" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="31" source="828a582c-7551-43da-9473-02681371efe5" target="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" weight="0" label="HUSBAND_WIFE">
+      <edge id="24" source="07b34c6a-8701-4ded-91fa-d9cb64ae6147" target="842c4f15-5809-4ecf-9349-c0ef61c89def" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="25" source="07b34c6a-8701-4ded-91fa-d9cb64ae6147" target="4fd2a424-3fdf-48ba-a728-c9dcf6f20c07" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="32" source="828a582c-7551-43da-9473-02681371efe5" target="4716ee49-633e-46c5-9e00-944a57543c55" weight="0" label="HUSBAND_WIFE">
+      <edge id="26" source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="df4ada6c-e340-4dec-8a46-c9f2596d653a" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="33" source="828a582c-7551-43da-9473-02681371efe5" target="1a788c02-ea6e-466c-ae87-ce953203876f" weight="0" label="HUSBAND_WIFE">
+      <edge id="27" source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="e49c69de-749b-49a4-a76f-8748c9c05b22" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="28" source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="3c69ab35-1d08-49f2-a0e9-9da44e4a2823" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="29" source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="4ef90fe5-8d33-481f-88b0-46bb0b2f468b" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="30" source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="49a437c3-bf1c-43e8-b44a-4d6e0a16b22a" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="31" source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="f4ccd706-cfd8-4473-895d-048f605c8688" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="32" source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="3d17f591-79d3-44a2-80a1-1d77438afffa" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="33" source="842c4f15-5809-4ecf-9349-c0ef61c89def" target="5285e839-505f-4da9-935f-6f6ade8a50ca" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="34" source="78a2288e-5e8a-451b-81d7-34734a47d5a4" target="26b8f2b1-5e58-4aca-b448-e28061ad16e7" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="34" source="828a582c-7551-43da-9473-02681371efe5" target="a79cf677-6adc-4829-a972-283fd4af63f6" weight="0" label="HUSBAND_WIFE">
+      <edge id="35" source="78a2288e-5e8a-451b-81d7-34734a47d5a4" target="d6771843-6a58-4f5b-9591-38c6269280b8" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="36" source="78a2288e-5e8a-451b-81d7-34734a47d5a4" target="bcd8d2f6-000c-4618-aa0f-46714a059cee" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="37" source="78a2288e-5e8a-451b-81d7-34734a47d5a4" target="34a5dbe6-c362-40c4-8153-76abcaa0842b" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="38" source="78a2288e-5e8a-451b-81d7-34734a47d5a4" target="580197a4-401a-44ee-a0dd-8d6b6d22aea6" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="39" source="580197a4-401a-44ee-a0dd-8d6b6d22aea6" target="c9d4a8fb-f1f5-4931-b0b5-9d6e7c4d54d1" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="35" source="e26f3a51-422b-4456-bf5a-e799a9b5fabd" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" weight="0" label="MOTHER_CHILD">
+      <edge id="40" source="580197a4-401a-44ee-a0dd-8d6b6d22aea6" target="5cf527ff-235a-4739-b5b6-a9bb4b8aac10" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="41" source="580197a4-401a-44ee-a0dd-8d6b6d22aea6" target="cffaf944-166a-47fb-848d-0aea5aab386a" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="42" source="36b7e090-2519-425b-876b-3a1fd209ca66" target="1c195cfa-2c03-49b0-82e8-5471b0e351fe" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="157" g="110" b="189"/>
+      </edge>
+      <edge id="43" source="6fc60d32-ef4b-4dcc-976d-5653de627359" target="3b8dc03b-1898-4126-9a09-db2bb66dea2a" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="157" g="110" b="189"/>
+      </edge>
+      <edge id="44" source="6fc60d32-ef4b-4dcc-976d-5653de627359" target="c7ee8913-ce9b-405d-8e82-dbfad77453fa" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="45" source="6fc60d32-ef4b-4dcc-976d-5653de627359" target="56204e37-10fa-4267-9ef4-a1575825ec46" weight="0">
+        <attvalues>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
+          <attvalue for="rawWeight" value="0"/>
+        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
+      </edge>
+      <edge id="46" source="3b8dc03b-1898-4126-9a09-db2bb66dea2a" target="c7ee8913-ce9b-405d-8e82-dbfad77453fa" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="MOTHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="201" g="102" b="82"/>
       </edge>
-      <edge id="36" source="e26f3a51-422b-4456-bf5a-e799a9b5fabd" target="4662b808-0594-4e85-9d7a-fad1cb993ab1" weight="0" label="MOTHER_CHILD">
+      <edge id="47" source="3b8dc03b-1898-4126-9a09-db2bb66dea2a" target="56204e37-10fa-4267-9ef4-a1575825ec46" weight="0">
         <attvalues>
           <attvalue for="relation_type" value="MOTHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="201" g="102" b="82"/>
       </edge>
-      <edge id="37" source="e26f3a51-422b-4456-bf5a-e799a9b5fabd" target="3075f7ec-3811-4370-a87a-6852aba0deaa" weight="0" label="MOTHER_CHILD">
+      <edge id="48" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="56204e37-10fa-4267-9ef4-a1575825ec46" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="HUSBAND_WIFE"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="157" g="110" b="189"/>
       </edge>
-      <edge id="38" source="469a05e1-5f98-42f8-ad0a-0fa101da19e8" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" weight="0" label="MOTHER_CHILD">
+      <edge id="49" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="98c3c827-547e-4252-8436-8bb9dea79874" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="39" source="469a05e1-5f98-42f8-ad0a-0fa101da19e8" target="ad5cb31b-e28e-4e26-90aa-1d588b8a9e14" weight="0" label="MOTHER_CHILD">
+      <edge id="50" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="df523abf-eafe-41cc-bbb6-6f1f5b3cf793" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="40" source="469a05e1-5f98-42f8-ad0a-0fa101da19e8" target="ffaece2e-ece3-4870-8e0f-c78e64bb41c4" weight="0" label="MOTHER_CHILD">
+      <edge id="51" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="7cd98ee4-5e14-4274-a6de-dd7317c13bf4" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="41" source="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" weight="0" label="MOTHER_CHILD">
+      <edge id="52" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="07b34c6a-8701-4ded-91fa-d9cb64ae6147" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="42" source="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" target="cf095ee0-4adf-482f-bff9-20b26b1bc018" weight="0" label="MOTHER_CHILD">
+      <edge id="53" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="842c4f15-5809-4ecf-9349-c0ef61c89def" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="43" source="9ed7678a-caf2-48a0-97cc-28388d6d2ecb" target="b517abf1-1659-4349-a14d-d8cde872453f" weight="0" label="MOTHER_CHILD">
+      <edge id="54" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="e49c69de-749b-49a4-a76f-8748c9c05b22" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="44" source="4716ee49-633e-46c5-9e00-944a57543c55" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" weight="0" label="MOTHER_CHILD">
+      <edge id="55" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="3c69ab35-1d08-49f2-a0e9-9da44e4a2823" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="45" source="4716ee49-633e-46c5-9e00-944a57543c55" target="2b5668cb-83e8-4fa7-a207-6431df5bf0b8" weight="0" label="MOTHER_CHILD">
+      <edge id="56" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="4ef90fe5-8d33-481f-88b0-46bb0b2f468b" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="46" source="4716ee49-633e-46c5-9e00-944a57543c55" target="99cff6fb-8b32-44f7-bb2b-0500c56b33f1" weight="0" label="MOTHER_CHILD">
+      <edge id="57" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="49a437c3-bf1c-43e8-b44a-4d6e0a16b22a" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="47" source="1a788c02-ea6e-466c-ae87-ce953203876f" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" weight="0" label="MOTHER_CHILD">
+      <edge id="58" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="f4ccd706-cfd8-4473-895d-048f605c8688" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="48" source="1a788c02-ea6e-466c-ae87-ce953203876f" target="7e23d677-980d-4678-817c-87c3a63a66b8" weight="0" label="MOTHER_CHILD">
+      <edge id="59" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="3d17f591-79d3-44a2-80a1-1d77438afffa" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="49" source="1a788c02-ea6e-466c-ae87-ce953203876f" target="9268f8a6-81e5-42ce-94ff-d8ef4da85352" weight="0" label="MOTHER_CHILD">
+      <edge id="60" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="5285e839-505f-4da9-935f-6f6ade8a50ca" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="50" source="a79cf677-6adc-4829-a972-283fd4af63f6" target="473f1ce3-a3cc-4968-a2d1-19ed3f081048" weight="0" label="MOTHER_CHILD">
+      <edge id="61" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="a2df66a0-b98c-41a0-8773-886a4df2c4b9" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
-      <edge id="51" source="a79cf677-6adc-4829-a972-283fd4af63f6" target="019b5320-ed5d-40ca-a06c-d55e14fdd867" weight="0" label="MOTHER_CHILD">
+      <edge id="62" source="c7ee8913-ce9b-405d-8e82-dbfad77453fa" target="78a2288e-5e8a-451b-81d7-34734a47d5a4" weight="0">
         <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
+          <attvalue for="relation_type" value="FATHER_CHILD"/>
           <attvalue for="rawWeight" value="0"/>
         </attvalues>
-      </edge>
-      <edge id="52" source="a79cf677-6adc-4829-a972-283fd4af63f6" target="8da5a576-f7c9-499c-95a1-2f4506182ff5" weight="0" label="MOTHER_CHILD">
-        <attvalues>
-          <attvalue for="relation_type" value="MOTHER_CHILD"/>
-          <attvalue for="rawWeight" value="0"/>
-        </attvalues>
+        <viz:color r="127" g="166" b="89"/>
       </edge>
     </edges>
   </graph>
