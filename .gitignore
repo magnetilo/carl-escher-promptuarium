@@ -1,5 +1,5 @@
 __pycache__/
-.ipynb_checkpoints/poetry.lock
+.ipynb_checkpoints/
 pyproject.toml
 .vscode
 poetry.lock
