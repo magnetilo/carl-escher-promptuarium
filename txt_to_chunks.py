@@ -32,6 +32,7 @@ Mains steps:
 * Split familiy documents into separate person chunks
     * write each person chunk to a new file
     * keep the file name of the original text files for reference
+        * distinguish between different family stems (e.g. Schaad A, Schaad B)
 
 """
 
@@ -173,16 +174,24 @@ if args.verbose:
     # print(md_files)
 
 # Remove items containing the substring "1_Meta" from the list
+# WARNING: this looses some families
 md_files: list[str] = [file for file in md_files if "1_Meta" not in file]
+md_files: list[str] = [file for file in md_files if "Abgestorbne" not in file]
 
 #  Prepare files for splitting
 # ==============================================================================
 
+family_pattern: re.Pattern[str] = re.compile(
+    r"\/data\/(von\s+)?[a-zA-ZäöüÄÖÜ]+((\s+(v(om|\.|on)\s+)[a-zA-ZäöüÄÖÜ]+))?"
+)
+
 # write text files to list of strings
-texts: list[str] = []
+texts: list[list[str]] = []
 for file in md_files:
     with open(file, "r", encoding="utf-8") as f:
-        texts.append(f.read())
+        texts.append(
+            [f.read(), file, family_pattern.search(file).group().replace("/data/", "")]
+        )
 
 # Put footnotes back into their context
 
@@ -199,29 +208,127 @@ fn_text_pattern: re.Pattern[str] = re.compile(
 )
 
 # iterate over the footnotes and check if a footnote text is found and whether it is preceded by a footnote anchor with the corresponding number earlier in the string
-for text in texts:
-    fn_matches: list[re.Match[str]] = fn_pattern.finditer(text)
-    for match in fn_matches:
-        fn_text_match: re.Match[str] = fn_text_pattern.search(text, match.end())
-        if fn_text_match:
+sublist: list[str]
+text: str
+for sublist in texts:
+    for text in sublist:
+        fn_matches: list[re.Match[str]] = fn_pattern.finditer(text)
+        for match in fn_matches:
+            fn_text_match: re.Match[str] = fn_text_pattern.search(text, match.end())
+            if fn_text_match:
 
-            # check if the corresponding footnote anchor is missing before trying to replace it by the footnote text
-            if not fn_text_match.group(1):
-                logging.warning(
-                    f"Footnote text {fn_text_match.group(2)} has no corresponding anchor in text {text}"
-                )
+                # check if the corresponding footnote anchor is missing before trying to replace it by the footnote text
+                if not fn_text_match.group(1):
+                    logging.warning(
+                        f"Footnote text {fn_text_match.group(1)} has no corresponding anchor in text {text}"
+                    )
+                    continue
+                else:
+                    # replace the footnote anchor with the footnote text
+                    text = text.replace(match.group(), fn_text_match.group(1), 1)
+                    # remove the footnote text from the text
+                    text = re.sub(fn_text_pattern, "", text, 1)
+                    texts[texts.index(sublist)][0] = text
+
+
+# output the family names from the texts list
+if args.verbose:
+    for sublist in texts:
+        print(sublist[2])
+
+# append all the texts regarding the same family to one string joined by two newlines
+# and write the string to a new set in the form: familyname: text
+
+# create a dictionary to store the texts by family
+family_texts: dict[str, str] = {}
+
+for sublist in texts:
+    if sublist[2] in family_texts:
+        family_texts[sublist[2]] += "\n\n" + sublist[0]
+    else:
+        family_texts[sublist[2]] = sublist[0]
+
+if args.verbose:
+    print(family_texts)
+
+# remove any html tags from the family texts
+if args.remove_html:
+    html_pattern: re.Pattern[str] = re.compile(r"<.*?>")
+    for family in family_texts:
+        family_texts[family] = html_pattern.sub("", family_texts[family])
+
+# regex pattern to match [linebreak]"__BLANK__"[linebreak][digit] (lookahead so as not including the digit)
+blank_pattern: re.Pattern[str] = re.compile(r"\n__BLANK__\n(?=\d)")
+
+# iterate over the dictionary and replace the blank_pattern by the String "NEWFILE"
+
+for family in family_texts:
+    family_texts[family] = blank_pattern.sub("\nNEWFILE\n", family_texts[family])
+
+# split text for each family into separate person files at the marker NEWFILE named [familyname]_[first three chars at beginning of text].txt
+# and write the text to the output directory as utf-8 encoded text files
+
+# create the output directory if it doesn't exist
+if not os.path.exists(args.output_directory):
+    os.makedirs(args.output_directory)
+
+# iterate over the dictionary and write output the family texts split by the marker NEWFILE and using the family name and the first three characters of the text as the file name
+with alive_bar(len(family_texts)) as bar:
+    for family in family_texts:
+        family_text: str = family_texts[family]
+        family_text = family_text.split("NEWFILE")
+        for i, person in enumerate(family_text):
+            # remove empty lines at the beginning and ending of the person chunks
+            person = person.strip()
+            filename_suffix: str = re.sub(
+                r"\\.*", "", re.sub(r"/.*", "", person[:3].replace(" ", "_"))
+            )
+            if person == "":
                 continue
-            else:
-                # replace the footnote anchor with the footnote text
-                text: str = text.replace(
-                    match.group(), fn_text_match.group(2), 1
-                )
-                # remove the footnote text from the text
-                text: str = re.sub(fn_text_pattern, "", text, 1)
-                texts[texts.index(text)] = text
+            with open(
+                os.path.join(
+                    args.output_directory,
+                    f"{family}_{filename_suffix}.txt",
+                ),
+                "w",
+                encoding="utf-8",
+            ) as f:
+                f.write(person)
+        bar()
+
+
+# read family names from filepath in texts list
+# WARNING: this is a dirty hardcoded solution only accepting forward path separators
+# regex \/data\/(von\s+)?[a-zA-ZäöüÄÖÜ]+((\s+(v(om|\.|on)\s+)[a-zA-ZäöüÄÖÜ]+))?
+
+# # create a list of family names
+# families: list[str] = []
+# for sublist in texts:
+#     for text in sublist:
+#         family_match: re.Match[str] = family_pattern.search(text)
+#         if family_match:
+#             families.append(family_match.group())
+
+# # remove prefixed "/data/" from family names
+# families: list[str] = [family.replace("/data/", "") for family in families]
+
+# # remove duplicates from the list of families
+# families = list(set(families))
+
+# if args.verbose:
+#     print(families)
+
+#         * remove repeating headers and footers
+# * Split familiy documents into separate person chunks
+#     * write each person chunk to a new file
+#     * keep the file name of the original text files for reference
 
 
 # #     * optionally strip html tags from markdown (dirty solution)
+
+
+# nice to have
+
 
 # if args.remove_html:
 #     html_pattern: re.Pattern[str] = re.compile(r"<.*?>")
@@ -236,14 +343,7 @@ for text in texts:
 #         text: str = hyphenation_pattern.sub(r"\1\2", text)
 #         texts[texts.index(text)] = text
 
-# output the first 5 entries of the texts list
-if args.verbose:
-    print(texts[:5])
+#         * remove repeating numbering when a person is mentioned at the end of a page and at the beginning of the next page
 
 
-#     * Create one document per family
-#         * remove repeating headers and footers
-#         * remove repeating numbering
-# * Split familiy documents into separate person chunks
-#     * write each person chunk to a new file
-#     * keep the file name of the original text files for reference
+#     * distinguish between different family stems (e.g. Schaad A, Schaad B)
