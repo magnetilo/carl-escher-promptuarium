@@ -1,0 +1,194 @@
+In the following, I will give you input strings and you should parse it into a json as I will describe now. The input strings contain informations about historic families. The first person is always a male person (father) that is identified by a number within his family tree. Normally, the male is married to a female person (mother) introduced with the abbreviation ux. for uxor. Sometimes, the male person had a second wife or even more. The wives are sometimes further specified through noting their father, again possibly with his own identification number in their family tree. After the parents follow their children. Male children are sometimes described with a number, indicating their own identification number in the family tree. For some children, there is also their spouse listed, again possibly with its own identification number in their family tree.
+
+The input should be parsed into the following json structure containing all the persons mentioned in the input string, as well as all the relations between the persons:
+
+{
+    "persons": [
+        {
+            "person_number": 1,  # The number specifying each person in the input string. Should go from 1, 2, 3, …
+            "family_name": "Billeter",  # The name of the family denoted at the top of the input string.
+            "family_id": "<family_name><male identifier>",  # This identifier is important for being able to
+                                                                                        # reconstruct the family relations. It is a string 
+                                                                                        # combining the family_name and the male identifier
+                                                                                        # with zero padding to four digits. The male identifier 
+                                                                                        # is either denoted by the first number before 
+                                                                                        # decimal dot preceding the father, or as an 
+                                                                                        # identification number following the father of the 
+                                                                                        # wive or the male children.
+            "father_family_id": "<family_name><male identifier of father>",  # All children are linked to their fathers with the family_id 
+                                                                                                                 # of their father. This id is the family_id of the father.
+                                                                                                                 # The father_family_id of the father is the digit after the decimal 
+                                                                                                                 # point preceding the fathers name.
+            "given_name": "Susanna",  # The given_name of each person.
+            "birth_year": 1687,  # The birth year of each person, sometimes denoted after the person: <birth_year> - <death_year>. Can be null.
+            "death_year": null,  # The year of death of each person, , sometimes denoted after the person: <birth_year> - <death_year>. Can be null.
+            "profession": "Pfister"  # Sometimes the persons are further specified through their profession. Can be null.
+        },
+        {
+            "person_number": 2,
+            ...
+        },
+        ... 
+    ],
+    "relations": [
+        {
+            "person_number_1": 1,  # person_number of the first person
+            "person_number_2": 2,  # person_number of the second person
+            "relation_type": "<relation_type>"  # relation_type specifying the relation between person_number_1 
+                                                                  # and person_number_2. One of ["HUSBAND_WIFE", "FATHER_DAUGHTER", "MOTHER_DAUGHTER"]
+        },
+        {
+                "person_number_1": 1,
+                "person_number_2": 3,
+                "relation_type": "<relation_type>"
+        },
+        ...
+    ]
+}
+
+-------------------------------------------
+Example:
+
+<input_string>
+Billeter
+
+1\. Heinrich Billeter der Pfister
+von Mänedorf ward Burger & 
+Zftr z. Weggen 1609
+ux. Aa Maria Wirth
+> Hs. Caspar 1613-      No 2
+
+---
+[Dazu auf S. 224:]
+No 2 Pfr. zu Zumikon 1634 zu Wipkingen 1637
+Alumnatsinspektor eod. Pfr. zu Albisrie-
+den 1638
+
+---
+
+> Susanna 1615-1644
+m. 1633 Christoph Geiger No 6
+Pfr. zu Schwerzenbach 1636 +1665
+Adrian 1617 -      No 3
+</input_string>
+
+<parsed_json>
+{
+    "persons": [
+        {
+            "person_number": 1,
+            "family_id": "Billeter0001",
+            "father_family_id": null,
+            "family_name": "Billeter",
+            "given_name": "Heinrich",
+            "birth_year": null,
+            "death_year": null,
+            "profession": "Pfister",
+            "origin": "Mänedorf"
+        },
+        {
+            "family_id": null,
+            "father_family_id": null,
+            "family_name": "Wirth",
+            "given_name": "Anna Maria",
+            "birth_year": null,
+            "death_year": null
+        },
+        {
+            "family_id": "Billeter0002",
+            "father_family_id": "Billeter0001",
+            "family_name": "Billeter",
+            "given_name": "Hans Caspar",
+            "birth_year": 1613,
+            "death_year": null,
+            "profession": "Pfarrer"
+        },
+        {
+            "family_id": null,
+            "father_family_id": "Billeter0001",
+            "family_name": "Billeter",
+            "given_name": "Susanna",
+            "birth_year": 1615,
+            "death_year": 1644
+        },
+        {
+            "person_number": 5,
+            "family_id": "Geiger0006",
+            "father_family_id": null,
+            "family_name": "Geiger",
+            "given_name": "Christoph",
+            "birth_year": null,
+            "death_year": null,
+            "profession": "Pfarrer"
+        },
+        {
+            "person_number": 6,
+            "family_id": "Billeter0003",
+            "father_family_id": "Billeter0001",
+            "family_name": "Billeter",
+            "given_name": "Adrian",
+            "birth_year": 1617,
+            "death_year": null
+        }
+    ],
+    "relations": [
+        {
+            "person_number_1": 1, 
+            "person_number_2": 2, 
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 1,
+            "person_number_2": 3,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 2,
+            "person_number_2": 3,
+            "relation_type": "MOTHER_CHILD"
+        },
+        {
+            "person_number_1": 1,
+            "person_number_2": 4,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 2,
+            "person_number_2": 4,
+            "relation_type": "MOTHER_CHILD"
+        },
+        {
+            "person_number_1": 5,
+            "person_number_2": 4,
+            "relation_type": "HUSBAND_WIFE"
+        },
+        {
+            "person_number_1": 1,
+            "person_number_2": 6,
+            "relation_type": "FATHER_CHILD"
+        },
+        {
+            "person_number_1": 2,
+            "person_number_2": 6,
+            "relation_type": "MOTHER_CHILD"
+        }
+    ]
+}
+</parsed_json>
+
+Be careful to note:
+
+- "der Pfister" is not part of a name. It means "baker".
+- People indented under another person are considered their children. They have the same given_name.
+- "ux." means "uxor" and designates the following person to be married to the above person.
+- "T.v." means "Tochter von" and designates the following person to be the parent to the above person.
+- "W. v." means "Witwe von" and designates the following person to be the widow to the above person.
+- "Zftr." designates the membership in a "Zunft". The following year is the year when the person joined the Zunft.
+- Give UUIDs as identifiers to prevent name collisions.
+- The number at the beginning of a line before a man's name is to identify that person.
+- "Hs." is an abbreviation for the given name "Hans".
+- "Aa." is an abbreviation for the given name "Anna".
+- "Pfr." is an abbreciation for the profession "Pfarrer".
+- "T. v. B. 4" would be equal to "Tochter von B.. [Lastname mentioned before] N° 4"
+- "ux" followed by a number designates the wife number of the above person. It is followed by the wife's name, if known.
+
