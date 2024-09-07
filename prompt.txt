@@ -96,8 +96,13 @@ Be careful to note:
 - "der Pfister" is not part of a name. It means "baker".
 - People indented under another person are considered their children. They have the same surname.
 - "ux." means "uxor" and designates the following person to be married to the above person.
+- "T.v." means "Tochter von" and designates the following person to be the parent to the above person.
+- "W. v." means "Witwe von" and designates the following person to be the widow to the above person.
 - "Zftr." designates the membership in a "Zunft". The following year is the year when the person joined the Zunft.
 - Give UUIDs as identifiers to prevent name collisions.
 - The number at the beginning of a line before a man's name is to identify that person.
 - "Hs." is an abbreviation for the given name "Hans".
+- "Aa." is an abbreviation for the given name "Anna".
 - "Pfr." is an abbreciation for the profession "Pfarrer".
+- "T. v. B. 4" would be equal to "Tochter von B.. [Lastname mentioned before] N° 4"
+- "ux" followed by a number designates the wife number of the above person. It is followed by the wife's name, if known.
