@@ -81,6 +81,12 @@ class FamilyGraph:
             raise Exception('relation_type should be one of: FATHER_CHILD, HUSBAND_WIFE, MOTHER_CHILD')
         self.G.add_edge(id_from, id_to, relation_type=relation_type)
 
+        if relation_type == "FATHER_CHILD":
+            self.G.nodes[id_to]["father_family_id"] = self.G.nodes[id_from]["father_family_id"]
+
+        if relation_type == "HUSBAND_WIFE":
+            self.G.nodes[id_to]["husband_family_id"] = self.G.nodes[id_from]["husband_family_id"]
+
     def get_id_from_attributes(self, person_attributes):
         """
         Checks if a person node of given person_attributes already exists in the graph.
