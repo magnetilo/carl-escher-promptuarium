@@ -7,10 +7,11 @@ This repository provides a solution for converting transcribed genealogical hand
 ![example_handwritten_voegeli](/img/example_handwritten_voegeli.png)
 
 Content:
-- [Preprocessing: Building Chunks](#preprocessing:-building-chunks)
-- [Prompt Engineering: Chunks to JSON](#prompt-engineering:-chunks-to-json)
+- [Preprocessing: Building Chunks](#preprocessing-building-chunks)
+- [Prompt Engineering: Chunks to JSON](#prompt-engineering-chunks-to-json)
 - [Construct Graph](#construct-graph)
 - [Visualization](#visualization)
+- [Future Work](#future-work)
 
 
 ## Preprocessing: Building Chunks
@@ -216,4 +217,13 @@ File: [https://github.com/magnetilo/carl-escher-promptuarium/blob/main/data/grap
 
 
 ![graph](/img/graph.png)
+
+
+## Future Work
+
+- **Enhance LLM prompt:** Our current prompt extracts all persons and their informations well. However, it seems to extract wrong relationships and also misses some relationships. Actually, additionally extracting only the position of each person within a given family chunk (father, mother, child, father of mother, husband/wive of child) would be enough to construct these relationships hard-coded (instead of letting the LLM figuring them out). This would probably be a much more robust approach.
+- **Analysis examples:** Once the whole graph is constructed, it would be interesting to use it for answering some research questions.
+- **Publish graph data:** It would be great to make the graph data publically available, and see how other people can make use of these data.
+
+
 
